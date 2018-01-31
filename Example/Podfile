@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'EasyCrop_Example' do
+  pod 'EasyCrop', :path => '../'
+
+  target 'EasyCrop_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
