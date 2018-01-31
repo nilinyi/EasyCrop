@@ -10,7 +10,7 @@
 #import <EasyCrop/EasyCrop.h>
 
 @interface ECViewController ()
-@property (nonatomic, readwrite, strong) EMOCRImageCropView *cropImageView;
+@property (nonatomic, readwrite, strong) ECImageCropView *cropImageView;
 @end
 
 @implementation ECViewController
@@ -28,11 +28,11 @@
     [self.cropImageView setupCropBox];
 }
 
-- (EMOCRImageCropView *)cropImageView {
+- (ECImageCropView *)cropImageView {
     if (_cropImageView) {
         return _cropImageView;
     }
-    _cropImageView = [[EMOCRImageCropView alloc] initWithImage:[UIImage imageNamed:@"test_image"]];
+    _cropImageView = [[ECImageCropView alloc] initWithImage:[UIImage imageNamed:@"test_image"]];
     return _cropImageView;
 }
 

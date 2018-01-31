@@ -1,5 +1,5 @@
 //
-//  EMOCRImageCropBox.m
+//  ECImageCropBox.m
 //  EasyMenu
 //
 //  Created by Leo Ni on 6/4/17.
@@ -7,18 +7,18 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "EMOCRImageCropBox.h"
-#import "EMOCRImageCropView.h"
+#import "ECImageCropBox.h"
+#import "ECImageCropView.h"
 #import "ECCropBoxFrameConverter.h"
 #import "UIView+ECAutolayoutService.h"
 
-@interface EMOCRImageCropBox() <UIGestureRecognizerDelegate>
+@interface ECImageCropBox() <UIGestureRecognizerDelegate>
 /// crop区域允许移动的范围, 默认值为crop view的bounds
 @property (nonatomic, readwrite, assign) CGRect boundary;
 @property (nonatomic, readwrite, strong) NSMutableSet *activeGestureSet;
 @end
 
-@implementation EMOCRImageCropBox {
+@implementation ECImageCropBox {
     UIView *_topEdge; // top
     UIView *_rightEdge; // right
     UIView *_bottomEdge; // bottom
@@ -52,7 +52,7 @@ const UIEdgeInsets TouchableExtendInsets = {20.0, 20.0, 20.0, 20.0}; // 边缘�
 const CGSize MinimumCropBoxSize = {75, 75}; // 最小框(不包括边缘线)
 
 # pragma mark - Life Cycle
-- (instancetype)initWithFrame:(CGRect)frame inOCRImageCropView:(EMOCRImageCropView<EMOCRImageCropBoxDelegate> *)ocrImageCropView {
+- (instancetype)initWithFrame:(CGRect)frame inOCRImageCropView:(ECImageCropView<ECImageCropBoxDelegate> *)ocrImageCropView {
     // Extend the frame with the touchable insets
     // negative means extend, positive means shrink
     // 线宽 + 外侧触摸区域
@@ -596,13 +596,13 @@ typedef NS_ENUM(NSInteger, LCorner) {
     return self.activeGestureSet.count;
 }
 
-- (void)setMode:(EMOCRImageCropBoxMode)mode {
+- (void)setMode:(ECImageCropBoxMode)mode {
     switch (mode) {
-        case EMOCRImageCropBoxPresentingMode:
+        case ECImageCropBoxPresentingMode:
             self.userInteractionEnabled = NO;
             _centerTouchArea.hidden = YES;
             break;
-        case EMOCRImageCropBoxInteractionMode:
+        case ECImageCropBoxInteractionMode:
             self.userInteractionEnabled = YES;
             _centerTouchArea.hidden = NO;
             break;

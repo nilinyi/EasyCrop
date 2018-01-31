@@ -7,34 +7,34 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		04FFD48B3B67A5D7C32CE9E26CF2A9A4 /* EasyCrop.h in Headers */ = {isa = PBXBuildFile; fileRef = 7E34BEA14FA1315DEC221BAC21DFBEA2 /* EasyCrop.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		0CED8010879BEE8E8775797448B60F58 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
-		1514C3C4A51180FCCAAD50BAC4CD0E3A /* UIImage+Utility.h in Headers */ = {isa = PBXBuildFile; fileRef = B6D9EB8449E8DA6C4A1FC9AA373E02AE /* UIImage+Utility.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		16E60C94BAB5748E4936F96540590222 /* UIView+ECAutolayoutService.m in Sources */ = {isa = PBXBuildFile; fileRef = 13A4A2E2773ACEC3D035C505CFD2E621 /* UIView+ECAutolayoutService.m */; };
+		1529218F2451AE2EEF7659B693E85219 /* ECImageCropBox.m in Sources */ = {isa = PBXBuildFile; fileRef = 60C07D0A9FA8D8EE4BBCF28893992C22 /* ECImageCropBox.m */; };
+		23853921E78F77BC4C10432F252F99CB /* EasyCrop-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F5D151914886EB98F654740A8C7C3A4 /* EasyCrop-dummy.m */; };
+		2762A43F4FA6D37B693D18B604D03C1D /* ECCropBoxFrameConverter.m in Sources */ = {isa = PBXBuildFile; fileRef = BA22CF17F40AF317803458E05F825860 /* ECCropBoxFrameConverter.m */; };
 		2A3643A825537E7CE8D1E0BD4CB43DDF /* Pods-EasyCrop_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = AE399BEF2A1445410BD9E1DA123E12C6 /* Pods-EasyCrop_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		3280372874AC56F5D3CCA10527FCF7D5 /* ECLayerAnimationMaker.h in Headers */ = {isa = PBXBuildFile; fileRef = F0DD45A1A63F754AE7E2415384114870 /* ECLayerAnimationMaker.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		41A53F5231C794EDFF17DB9C40254165 /* ECGraphicsUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = 18FDA7288E73E8F916A8C26042018B85 /* ECGraphicsUtility.m */; };
-		484B3525AC5D8EADDB2D63F6E6999ADD /* EasyCrop-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 62E12028BA5EC92972B216F5AE971BE2 /* EasyCrop-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2AC92A626CAB78EBA11CE0444D16F539 /* UIImageView+Utility.m in Sources */ = {isa = PBXBuildFile; fileRef = 606DDF752F20214F643BA8215AF05E46 /* UIImageView+Utility.m */; };
+		420774E4BA33CE80A65A309D6783A0F2 /* ECImageCropView.m in Sources */ = {isa = PBXBuildFile; fileRef = FD2FA38B98F25331D9CFA5B657291A7F /* ECImageCropView.m */; };
+		45D7D32EA24048239A2066799D25B211 /* UIImageView+Utility.h in Headers */ = {isa = PBXBuildFile; fileRef = AADE34672FF4AB724121E001F899BCC2 /* UIImageView+Utility.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		47F9F4E9041AC7C5A04259B3116B3824 /* ECCropBoxFrameConverter.h in Headers */ = {isa = PBXBuildFile; fileRef = 7A5CDB8D3D41F9EAB05639483507AFA1 /* ECCropBoxFrameConverter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4A982AEC60124BF1BCA6052D84D77D5D /* UIImage+Utility.h in Headers */ = {isa = PBXBuildFile; fileRef = 3F7E88FB221B4AA78D8EB9882BB9529A /* UIImage+Utility.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4AFE5447C0E3DAACAE22262645671D64 /* Pods-EasyCrop_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 624BCD851A8AC31E7487B2B81D274617 /* Pods-EasyCrop_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		4E4F372929F1CE044BB359364C16F5BC /* EMOCRImageCropView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B744C74F82E792F945CB463F98F2651 /* EMOCRImageCropView.m */; };
-		505557847A0F980F7BC165299A2F294C /* ECGraphicsUtility.h in Headers */ = {isa = PBXBuildFile; fileRef = 68A849970C448DDA7A91469B5AC192CC /* ECGraphicsUtility.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		5695523B0E0221C06D7026B28E63F6DE /* ECLayerAnimationMaker.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C3123ABAEAAC5E10914A0862B2776C9 /* ECLayerAnimationMaker.m */; };
-		71D58FDD1055A12085FF21C51EFE6195 /* EasyCrop.h in Headers */ = {isa = PBXBuildFile; fileRef = 759AE9D59C5403A9F1B0DD713225C942 /* EasyCrop.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		89599A533E086E0FC32739D5C0D984F0 /* UIView+ECAutolayoutService.h in Headers */ = {isa = PBXBuildFile; fileRef = F700BF4C6FC92CD2BF58BFC6B8A7D3E7 /* UIView+ECAutolayoutService.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		8C028E71A5E057323E355AB343A7408E /* EasyCrop-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B40B0B73165581E65D38973DFC2D63FE /* EasyCrop-dummy.m */; };
+		5751B07463C33DB44F3BC4DC1E9FDBC5 /* ECGraphicsUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = 324A55EFAFF5F97A31332CA071C71025 /* ECGraphicsUtility.m */; };
+		6762ECF48D25A4F9B9DF4B03E192EAB4 /* ECImageCropBox.h in Headers */ = {isa = PBXBuildFile; fileRef = E3EB235EA01DEFFDF9B52D5F85440A4B /* ECImageCropBox.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6B3F6D1370AD93ECF007D317C3235232 /* UIBezierPath+Utility.h in Headers */ = {isa = PBXBuildFile; fileRef = 906756E618580B6638ABD320F7209A89 /* UIBezierPath+Utility.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7C864C58665F1D29FA2D5B76C299B9C7 /* ECLayerAnimationMaker.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BC2C9A70BBC931D7EFD0B97FE6205BA /* ECLayerAnimationMaker.m */; };
+		816A999F476BF4203576F9B2B0C60283 /* ECImageCropView.h in Headers */ = {isa = PBXBuildFile; fileRef = 14B045BB188524302E2B27E1FFE4EF57 /* ECImageCropView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		85C0DEDC45F7E9F0FDCE91F77440BE1B /* UIView+ECAutolayoutService.h in Headers */ = {isa = PBXBuildFile; fileRef = CF53CD1AE91725138B1DB894441E75FC /* UIView+ECAutolayoutService.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8AC411022E661F36F0D81B72DC8E2388 /* EasyCrop-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 4071E3E4E326C49C9BB8229A74C51759 /* EasyCrop-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A153AC29888CB5797C699479D3E29D8E /* Pods-EasyCrop_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = AC482CC4C567221BA1F321D80835F55D /* Pods-EasyCrop_Example-dummy.m */; };
-		A5120C900C9ACF8BEBD7E6D3B14A7AAA /* UIBezierPath+Utility.h in Headers */ = {isa = PBXBuildFile; fileRef = D031FCB410E5AA388C86C968FEDB3BB9 /* UIBezierPath+Utility.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A906C867E96C27FA87B08C3151CF174B /* UIBezierPath+Utility.m in Sources */ = {isa = PBXBuildFile; fileRef = AB670E6B245A2F265A1E415600AF0963 /* UIBezierPath+Utility.m */; };
 		B0DF6DB3B14E42F649906AADA16670CE /* Pods-EasyCrop_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9143498131141B8655BDC218C494ACFA /* Pods-EasyCrop_Tests-dummy.m */; };
-		B1AD803CF250675BAA840164401060C4 /* UIBezierPath+Utility.m in Sources */ = {isa = PBXBuildFile; fileRef = E0A447C350D26FEAFAFB49B04120ADE4 /* UIBezierPath+Utility.m */; };
-		BC902641599938A8535A6BF6A5057E6C /* ECCropBoxFrameConverter.h in Headers */ = {isa = PBXBuildFile; fileRef = 57FCFAC7EE8E2B5D8FA662488C3A2C4A /* ECCropBoxFrameConverter.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		BF1278A67D9E0CE45FE57CA463B1B170 /* UIImageView+Utility.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CD25D05CA45A08F4E0CA01B26209953 /* UIImageView+Utility.m */; };
 		C2621350B8B062E80E4199EB80C1D849 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
 		C7892DA908327413D2A1A116D110F582 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
-		CB978B73A0AA9C30E3A5156B1D17CB9E /* EMOCRImageCropBox.m in Sources */ = {isa = PBXBuildFile; fileRef = 55B4E93439D5E1D4001DC710C7E6A897 /* EMOCRImageCropBox.m */; };
-		CC6AF893B559989459F066B188BD7BAC /* ECCropBoxFrameConverter.m in Sources */ = {isa = PBXBuildFile; fileRef = BA8DD87C156872F1F90463BD3B25C3FA /* ECCropBoxFrameConverter.m */; };
-		DDE0002A1886E6B91DB784EECE834EC8 /* EMOCRImageCropBox.h in Headers */ = {isa = PBXBuildFile; fileRef = 1249CC737C76016F36AEE41C630AC19A /* EMOCRImageCropBox.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		EABC2674B51AF3F1B0037164DAB1EEFE /* EMOCRImageCropView.h in Headers */ = {isa = PBXBuildFile; fileRef = 5530A822C2F708AC51483AAB2426A57D /* EMOCRImageCropView.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		ECA907956E4FEF1DED99BB410E936996 /* UIImage+Utility.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AFCA771B01F7365CD0C2D3FA52D0901 /* UIImage+Utility.m */; };
-		F1FE59821EAD78E8F437EB839A910272 /* UIImageView+Utility.h in Headers */ = {isa = PBXBuildFile; fileRef = 15271F706C048C8ACA90BA5452FBABA7 /* UIImageView+Utility.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CDFA87EBFD264126EC0FFDE06DACD046 /* UIImage+Utility.m in Sources */ = {isa = PBXBuildFile; fileRef = E2215FDE5913239A23F5FC656555BA97 /* UIImage+Utility.m */; };
+		D0950EB239264F5D4074F2D90DCAE051 /* ECLayerAnimationMaker.h in Headers */ = {isa = PBXBuildFile; fileRef = 6BDE5859DBA2CC49509A10AD6BFD88FE /* ECLayerAnimationMaker.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E5DFA968BEB1B066728BA4A2EB37612B /* ECGraphicsUtility.h in Headers */ = {isa = PBXBuildFile; fileRef = 568849E95B9D7BA758AA8BA71EE8CED9 /* ECGraphicsUtility.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EA72F697605DA83E89C77CA36A758F2D /* UIView+ECAutolayoutService.m in Sources */ = {isa = PBXBuildFile; fileRef = F1EF769A1A0DE483625CEC1BEB687894 /* UIView+ECAutolayoutService.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,58 +49,58 @@
 
 /* Begin PBXFileReference section */
 		0B78D4B3A34EE3E529044E54312DD8B6 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		1249CC737C76016F36AEE41C630AC19A /* EMOCRImageCropBox.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EMOCRImageCropBox.h; path = EasyCrop/Classes/EMOCRImageCropBox.h; sourceTree = "<group>"; };
-		13A4A2E2773ACEC3D035C505CFD2E621 /* UIView+ECAutolayoutService.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UIView+ECAutolayoutService.m"; sourceTree = "<group>"; };
-		14092C3C94294D2B8F3180D3980563A6 /* EasyCrop.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = EasyCrop.modulemap; sourceTree = "<group>"; };
-		15271F706C048C8ACA90BA5452FBABA7 /* UIImageView+Utility.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIImageView+Utility.h"; sourceTree = "<group>"; };
-		18FDA7288E73E8F916A8C26042018B85 /* ECGraphicsUtility.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = ECGraphicsUtility.m; sourceTree = "<group>"; };
-		1B744C74F82E792F945CB463F98F2651 /* EMOCRImageCropView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = EMOCRImageCropView.m; path = EasyCrop/Classes/EMOCRImageCropView.m; sourceTree = "<group>"; };
+		14B045BB188524302E2B27E1FFE4EF57 /* ECImageCropView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ECImageCropView.h; path = EasyCrop/Classes/ECImageCropView.h; sourceTree = "<group>"; };
 		21C60BF8EAAF0E05A3D186DF7C920790 /* Pods-EasyCrop_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-EasyCrop_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		233EDCACF2C928DF172138540997E29F /* Pods-EasyCrop_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-EasyCrop_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
 		28D4CDF8965BD9972834ECBF1171BD98 /* Pods-EasyCrop_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-EasyCrop_Example-acknowledgements.plist"; sourceTree = "<group>"; };
-		2AFCA771B01F7365CD0C2D3FA52D0901 /* UIImage+Utility.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Utility.m"; sourceTree = "<group>"; };
-		2C3123ABAEAAC5E10914A0862B2776C9 /* ECLayerAnimationMaker.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = ECLayerAnimationMaker.m; sourceTree = "<group>"; };
-		2CD25D05CA45A08F4E0CA01B26209953 /* UIImageView+Utility.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+Utility.m"; sourceTree = "<group>"; };
+		324A55EFAFF5F97A31332CA071C71025 /* ECGraphicsUtility.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = ECGraphicsUtility.m; sourceTree = "<group>"; };
+		3D4130577F530CD0E0141FAF104F6612 /* EasyCrop-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "EasyCrop-prefix.pch"; sourceTree = "<group>"; };
+		3F7E88FB221B4AA78D8EB9882BB9529A /* UIImage+Utility.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIImage+Utility.h"; sourceTree = "<group>"; };
 		4003419C049ECF2B9B57117E3A13BF38 /* Pods-EasyCrop_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-EasyCrop_Tests-frameworks.sh"; sourceTree = "<group>"; };
+		4071E3E4E326C49C9BB8229A74C51759 /* EasyCrop-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "EasyCrop-umbrella.h"; sourceTree = "<group>"; };
 		41C5A61F74669ED89DA15C14CE8FB4AC /* Pods-EasyCrop_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-EasyCrop_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		467490C6128F2D9F6CCC9678FE3D7DC7 /* EasyCrop.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = EasyCrop.framework; path = EasyCrop.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		47140E10AA82D8383ABAA224353756CD /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
 		4743C8A2B4CB95AEE595008F76E1EE54 /* Pods-EasyCrop_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-EasyCrop_Example.release.xcconfig"; sourceTree = "<group>"; };
-		5530A822C2F708AC51483AAB2426A57D /* EMOCRImageCropView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EMOCRImageCropView.h; path = EasyCrop/Classes/EMOCRImageCropView.h; sourceTree = "<group>"; };
-		55B4E93439D5E1D4001DC710C7E6A897 /* EMOCRImageCropBox.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = EMOCRImageCropBox.m; path = EasyCrop/Classes/EMOCRImageCropBox.m; sourceTree = "<group>"; };
-		57FCFAC7EE8E2B5D8FA662488C3A2C4A /* ECCropBoxFrameConverter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ECCropBoxFrameConverter.h; path = EasyCrop/Classes/ECCropBoxFrameConverter.h; sourceTree = "<group>"; };
+		568849E95B9D7BA758AA8BA71EE8CED9 /* ECGraphicsUtility.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = ECGraphicsUtility.h; sourceTree = "<group>"; };
+		606DDF752F20214F643BA8215AF05E46 /* UIImageView+Utility.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+Utility.m"; sourceTree = "<group>"; };
+		60C07D0A9FA8D8EE4BBCF28893992C22 /* ECImageCropBox.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ECImageCropBox.m; path = EasyCrop/Classes/ECImageCropBox.m; sourceTree = "<group>"; };
 		624BCD851A8AC31E7487B2B81D274617 /* Pods-EasyCrop_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-EasyCrop_Tests-umbrella.h"; sourceTree = "<group>"; };
-		62E12028BA5EC92972B216F5AE971BE2 /* EasyCrop-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "EasyCrop-umbrella.h"; sourceTree = "<group>"; };
 		6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		6608C16303B861F7CD5721327FA85B08 /* Pods-EasyCrop_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-EasyCrop_Example-frameworks.sh"; sourceTree = "<group>"; };
-		68A849970C448DDA7A91469B5AC192CC /* ECGraphicsUtility.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = ECGraphicsUtility.h; sourceTree = "<group>"; };
 		69D8B3C80447F0606412A984251BF04E /* Pods-EasyCrop_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-EasyCrop_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		721B16C45674F609F6FB6DC282FAC1E1 /* EasyCrop.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = EasyCrop.xcconfig; sourceTree = "<group>"; };
-		759AE9D59C5403A9F1B0DD713225C942 /* EasyCrop.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EasyCrop.h; path = EasyCrop/Classes/EasyCrop.h; sourceTree = "<group>"; };
+		6BDE5859DBA2CC49509A10AD6BFD88FE /* ECLayerAnimationMaker.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = ECLayerAnimationMaker.h; sourceTree = "<group>"; };
 		7993BE4AE781B375F2292477AC2B79A4 /* Pods-EasyCrop_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-EasyCrop_Example-resources.sh"; sourceTree = "<group>"; };
+		7A5CDB8D3D41F9EAB05639483507AFA1 /* ECCropBoxFrameConverter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ECCropBoxFrameConverter.h; path = EasyCrop/Classes/ECCropBoxFrameConverter.h; sourceTree = "<group>"; };
+		7BC2C9A70BBC931D7EFD0B97FE6205BA /* ECLayerAnimationMaker.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = ECLayerAnimationMaker.m; sourceTree = "<group>"; };
+		7E34BEA14FA1315DEC221BAC21DFBEA2 /* EasyCrop.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EasyCrop.h; path = EasyCrop/Classes/EasyCrop.h; sourceTree = "<group>"; };
 		85EB8FA430B9477917C274322FE431D8 /* Pods_EasyCrop_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_EasyCrop_Example.framework; path = "Pods-EasyCrop_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8663DE473EA03580A3EE575B1B6B6467 /* Pods_EasyCrop_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_EasyCrop_Tests.framework; path = "Pods-EasyCrop_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		906756E618580B6638ABD320F7209A89 /* UIBezierPath+Utility.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIBezierPath+Utility.h"; sourceTree = "<group>"; };
 		9143498131141B8655BDC218C494ACFA /* Pods-EasyCrop_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-EasyCrop_Tests-dummy.m"; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		97381597A6E123C6736E9EFEE96E0BAF /* Pods-EasyCrop_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-EasyCrop_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		9AAE5069BFEDF172409E2F44D7567C07 /* Pods-EasyCrop_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-EasyCrop_Tests-resources.sh"; sourceTree = "<group>"; };
+		9F5D151914886EB98F654740A8C7C3A4 /* EasyCrop-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "EasyCrop-dummy.m"; sourceTree = "<group>"; };
+		A6DE5CD173E136F44E7B2F1E26C2FA45 /* EasyCrop.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = EasyCrop.modulemap; sourceTree = "<group>"; };
+		AADE34672FF4AB724121E001F899BCC2 /* UIImageView+Utility.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIImageView+Utility.h"; sourceTree = "<group>"; };
+		AB670E6B245A2F265A1E415600AF0963 /* UIBezierPath+Utility.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UIBezierPath+Utility.m"; sourceTree = "<group>"; };
 		AC482CC4C567221BA1F321D80835F55D /* Pods-EasyCrop_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-EasyCrop_Example-dummy.m"; sourceTree = "<group>"; };
 		AE399BEF2A1445410BD9E1DA123E12C6 /* Pods-EasyCrop_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-EasyCrop_Example-umbrella.h"; sourceTree = "<group>"; };
 		AF59FBE69ABCE1E769AA1028A0945907 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B2EF4381141DD8713916118EFE3EE5D0 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B40B0B73165581E65D38973DFC2D63FE /* EasyCrop-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "EasyCrop-dummy.m"; sourceTree = "<group>"; };
-		B6D9EB8449E8DA6C4A1FC9AA373E02AE /* UIImage+Utility.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIImage+Utility.h"; sourceTree = "<group>"; };
-		BA8DD87C156872F1F90463BD3B25C3FA /* ECCropBoxFrameConverter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ECCropBoxFrameConverter.m; path = EasyCrop/Classes/ECCropBoxFrameConverter.m; sourceTree = "<group>"; };
-		C137EB9E8124F97BC2A09B3DC02E4262 /* EasyCrop.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; path = EasyCrop.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		B8DCEFF6827F4C7D2C2D248C8277FA07 /* EasyCrop.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = EasyCrop.xcconfig; sourceTree = "<group>"; };
+		BA22CF17F40AF317803458E05F825860 /* ECCropBoxFrameConverter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ECCropBoxFrameConverter.m; path = EasyCrop/Classes/ECCropBoxFrameConverter.m; sourceTree = "<group>"; };
 		CA69078D04C81A39B09053A9908D49EF /* Pods-EasyCrop_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-EasyCrop_Tests.modulemap"; sourceTree = "<group>"; };
-		CA8E41381C618EDBAE6C8EFA3BE2443C /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
-		D031FCB410E5AA388C86C968FEDB3BB9 /* UIBezierPath+Utility.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIBezierPath+Utility.h"; sourceTree = "<group>"; };
+		CF53CD1AE91725138B1DB894441E75FC /* UIView+ECAutolayoutService.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIView+ECAutolayoutService.h"; sourceTree = "<group>"; };
 		D575734F7E379DD1288F32FE12799722 /* Pods-EasyCrop_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-EasyCrop_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		DF7A56C60622FD7FF1190CCDF37169BD /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
-		E0A447C350D26FEAFAFB49B04120ADE4 /* UIBezierPath+Utility.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UIBezierPath+Utility.m"; sourceTree = "<group>"; };
-		E20A83E642881087205B6734E4D7A665 /* EasyCrop-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "EasyCrop-prefix.pch"; sourceTree = "<group>"; };
+		E2215FDE5913239A23F5FC656555BA97 /* UIImage+Utility.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Utility.m"; sourceTree = "<group>"; };
 		E2CF52FBB316C2C5FAA601959B347B9A /* Pods-EasyCrop_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-EasyCrop_Example.modulemap"; sourceTree = "<group>"; };
-		F0DD45A1A63F754AE7E2415384114870 /* ECLayerAnimationMaker.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = ECLayerAnimationMaker.h; sourceTree = "<group>"; };
-		F700BF4C6FC92CD2BF58BFC6B8A7D3E7 /* UIView+ECAutolayoutService.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIView+ECAutolayoutService.h"; sourceTree = "<group>"; };
+		E3EB235EA01DEFFDF9B52D5F85440A4B /* ECImageCropBox.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ECImageCropBox.h; path = EasyCrop/Classes/ECImageCropBox.h; sourceTree = "<group>"; };
+		F1EF769A1A0DE483625CEC1BEB687894 /* UIView+ECAutolayoutService.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UIView+ECAutolayoutService.m"; sourceTree = "<group>"; };
+		F309E7C15E70AC306A975ACC8A515CEE /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		F69CE253F1F4F19E28E9588ACCF6D314 /* EasyCrop.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; path = EasyCrop.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		F71D7F0253919D24C4FA98397FDAFFF8 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FD2FA38B98F25331D9CFA5B657291A7F /* ECImageCropView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ECImageCropView.m; path = EasyCrop/Classes/ECImageCropView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -131,40 +131,72 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0CECFE2FE1318029C21DDF1B5CE67EB2 /* Utils */ = {
+		17D7FB72F99481681144BA3A527C466F /* EasyCrop */ = {
 			isa = PBXGroup;
 			children = (
-				68A849970C448DDA7A91469B5AC192CC /* ECGraphicsUtility.h */,
-				18FDA7288E73E8F916A8C26042018B85 /* ECGraphicsUtility.m */,
-				F0DD45A1A63F754AE7E2415384114870 /* ECLayerAnimationMaker.h */,
-				2C3123ABAEAAC5E10914A0862B2776C9 /* ECLayerAnimationMaker.m */,
-				D031FCB410E5AA388C86C968FEDB3BB9 /* UIBezierPath+Utility.h */,
-				E0A447C350D26FEAFAFB49B04120ADE4 /* UIBezierPath+Utility.m */,
-				B6D9EB8449E8DA6C4A1FC9AA373E02AE /* UIImage+Utility.h */,
-				2AFCA771B01F7365CD0C2D3FA52D0901 /* UIImage+Utility.m */,
-				15271F706C048C8ACA90BA5452FBABA7 /* UIImageView+Utility.h */,
-				2CD25D05CA45A08F4E0CA01B26209953 /* UIImageView+Utility.m */,
-				F700BF4C6FC92CD2BF58BFC6B8A7D3E7 /* UIView+ECAutolayoutService.h */,
-				13A4A2E2773ACEC3D035C505CFD2E621 /* UIView+ECAutolayoutService.m */,
+				7E34BEA14FA1315DEC221BAC21DFBEA2 /* EasyCrop.h */,
+				7A5CDB8D3D41F9EAB05639483507AFA1 /* ECCropBoxFrameConverter.h */,
+				BA22CF17F40AF317803458E05F825860 /* ECCropBoxFrameConverter.m */,
+				E3EB235EA01DEFFDF9B52D5F85440A4B /* ECImageCropBox.h */,
+				60C07D0A9FA8D8EE4BBCF28893992C22 /* ECImageCropBox.m */,
+				14B045BB188524302E2B27E1FFE4EF57 /* ECImageCropView.h */,
+				FD2FA38B98F25331D9CFA5B657291A7F /* ECImageCropView.m */,
+				59BB0357AF5BD6A5B6D1E77D652A319F /* Pod */,
+				23EC47980CF45DE98D8FBD6DF7CF01F2 /* Support Files */,
+				36A72540DF20A0C36F283922CB4ED76C /* Utils */,
 			);
-			name = Utils;
-			path = EasyCrop/Classes/Utils;
+			name = EasyCrop;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		23EC47980CF45DE98D8FBD6DF7CF01F2 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				A6DE5CD173E136F44E7B2F1E26C2FA45 /* EasyCrop.modulemap */,
+				B8DCEFF6827F4C7D2C2D248C8277FA07 /* EasyCrop.xcconfig */,
+				9F5D151914886EB98F654740A8C7C3A4 /* EasyCrop-dummy.m */,
+				3D4130577F530CD0E0141FAF104F6612 /* EasyCrop-prefix.pch */,
+				4071E3E4E326C49C9BB8229A74C51759 /* EasyCrop-umbrella.h */,
+				F71D7F0253919D24C4FA98397FDAFFF8 /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/EasyCrop";
 			sourceTree = "<group>";
 		};
 		247786AFABA654EDE637EF96BD860E6F /* Development Pods */ = {
 			isa = PBXGroup;
 			children = (
-				D300939151F1E6DDA337531CEFEEC26E /* EasyCrop */,
+				17D7FB72F99481681144BA3A527C466F /* EasyCrop */,
 			);
 			name = "Development Pods";
 			sourceTree = "<group>";
 		};
-		3ED3EA27CCC8D87A424B64B1A99E3504 /* Pod */ = {
+		36A72540DF20A0C36F283922CB4ED76C /* Utils */ = {
 			isa = PBXGroup;
 			children = (
-				C137EB9E8124F97BC2A09B3DC02E4262 /* EasyCrop.podspec */,
-				CA8E41381C618EDBAE6C8EFA3BE2443C /* LICENSE */,
-				DF7A56C60622FD7FF1190CCDF37169BD /* README.md */,
+				568849E95B9D7BA758AA8BA71EE8CED9 /* ECGraphicsUtility.h */,
+				324A55EFAFF5F97A31332CA071C71025 /* ECGraphicsUtility.m */,
+				6BDE5859DBA2CC49509A10AD6BFD88FE /* ECLayerAnimationMaker.h */,
+				7BC2C9A70BBC931D7EFD0B97FE6205BA /* ECLayerAnimationMaker.m */,
+				906756E618580B6638ABD320F7209A89 /* UIBezierPath+Utility.h */,
+				AB670E6B245A2F265A1E415600AF0963 /* UIBezierPath+Utility.m */,
+				3F7E88FB221B4AA78D8EB9882BB9529A /* UIImage+Utility.h */,
+				E2215FDE5913239A23F5FC656555BA97 /* UIImage+Utility.m */,
+				AADE34672FF4AB724121E001F899BCC2 /* UIImageView+Utility.h */,
+				606DDF752F20214F643BA8215AF05E46 /* UIImageView+Utility.m */,
+				CF53CD1AE91725138B1DB894441E75FC /* UIView+ECAutolayoutService.h */,
+				F1EF769A1A0DE483625CEC1BEB687894 /* UIView+ECAutolayoutService.m */,
+			);
+			name = Utils;
+			path = EasyCrop/Classes/Utils;
+			sourceTree = "<group>";
+		};
+		59BB0357AF5BD6A5B6D1E77D652A319F /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				F69CE253F1F4F19E28E9588ACCF6D314 /* EasyCrop.podspec */,
+				F309E7C15E70AC306A975ACC8A515CEE /* LICENSE */,
+				47140E10AA82D8383ABAA224353756CD /* README.md */,
 			);
 			name = Pod;
 			sourceTree = "<group>";
@@ -178,20 +210,6 @@
 				C146CB9963FABF49FE9F0E73517F63DE /* Products */,
 				9AD9883B3F1280A1DC9DB6DAD556453F /* Targets Support Files */,
 			);
-			sourceTree = "<group>";
-		};
-		83C6BFB40F57B4A94F991B6068290088 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				14092C3C94294D2B8F3180D3980563A6 /* EasyCrop.modulemap */,
-				721B16C45674F609F6FB6DC282FAC1E1 /* EasyCrop.xcconfig */,
-				B40B0B73165581E65D38973DFC2D63FE /* EasyCrop-dummy.m */,
-				E20A83E642881087205B6734E4D7A665 /* EasyCrop-prefix.pch */,
-				62E12028BA5EC92972B216F5AE971BE2 /* EasyCrop-umbrella.h */,
-				B2EF4381141DD8713916118EFE3EE5D0 /* Info.plist */,
-			);
-			name = "Support Files";
-			path = "Example/Pods/Target Support Files/EasyCrop";
 			sourceTree = "<group>";
 		};
 		9AD9883B3F1280A1DC9DB6DAD556453F /* Targets Support Files */ = {
@@ -239,24 +257,6 @@
 			path = "Target Support Files/Pods-EasyCrop_Tests";
 			sourceTree = "<group>";
 		};
-		D300939151F1E6DDA337531CEFEEC26E /* EasyCrop */ = {
-			isa = PBXGroup;
-			children = (
-				759AE9D59C5403A9F1B0DD713225C942 /* EasyCrop.h */,
-				57FCFAC7EE8E2B5D8FA662488C3A2C4A /* ECCropBoxFrameConverter.h */,
-				BA8DD87C156872F1F90463BD3B25C3FA /* ECCropBoxFrameConverter.m */,
-				1249CC737C76016F36AEE41C630AC19A /* EMOCRImageCropBox.h */,
-				55B4E93439D5E1D4001DC710C7E6A897 /* EMOCRImageCropBox.m */,
-				5530A822C2F708AC51483AAB2426A57D /* EMOCRImageCropView.h */,
-				1B744C74F82E792F945CB463F98F2651 /* EMOCRImageCropView.m */,
-				3ED3EA27CCC8D87A424B64B1A99E3504 /* Pod */,
-				83C6BFB40F57B4A94F991B6068290088 /* Support Files */,
-				0CECFE2FE1318029C21DDF1B5CE67EB2 /* Utils */,
-			);
-			name = EasyCrop;
-			path = ../..;
-			sourceTree = "<group>";
-		};
 		D35AF013A5F0BAD4F32504907A52519E /* iOS */ = {
 			isa = PBXGroup;
 			children = (
@@ -294,29 +294,29 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		15C7E556A6DAE613F0B5DB15994090C5 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8AC411022E661F36F0D81B72DC8E2388 /* EasyCrop-umbrella.h in Headers */,
+				04FFD48B3B67A5D7C32CE9E26CF2A9A4 /* EasyCrop.h in Headers */,
+				47F9F4E9041AC7C5A04259B3116B3824 /* ECCropBoxFrameConverter.h in Headers */,
+				E5DFA968BEB1B066728BA4A2EB37612B /* ECGraphicsUtility.h in Headers */,
+				6762ECF48D25A4F9B9DF4B03E192EAB4 /* ECImageCropBox.h in Headers */,
+				816A999F476BF4203576F9B2B0C60283 /* ECImageCropView.h in Headers */,
+				D0950EB239264F5D4074F2D90DCAE051 /* ECLayerAnimationMaker.h in Headers */,
+				6B3F6D1370AD93ECF007D317C3235232 /* UIBezierPath+Utility.h in Headers */,
+				4A982AEC60124BF1BCA6052D84D77D5D /* UIImage+Utility.h in Headers */,
+				45D7D32EA24048239A2066799D25B211 /* UIImageView+Utility.h in Headers */,
+				85C0DEDC45F7E9F0FDCE91F77440BE1B /* UIView+ECAutolayoutService.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		3A0C47235759B0689A7EB80CCDB408A6 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				2A3643A825537E7CE8D1E0BD4CB43DDF /* Pods-EasyCrop_Example-umbrella.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		F2494A7DE97CCEFFD47DD669BB7ECC18 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				484B3525AC5D8EADDB2D63F6E6999ADD /* EasyCrop-umbrella.h in Headers */,
-				71D58FDD1055A12085FF21C51EFE6195 /* EasyCrop.h in Headers */,
-				BC902641599938A8535A6BF6A5057E6C /* ECCropBoxFrameConverter.h in Headers */,
-				505557847A0F980F7BC165299A2F294C /* ECGraphicsUtility.h in Headers */,
-				3280372874AC56F5D3CCA10527FCF7D5 /* ECLayerAnimationMaker.h in Headers */,
-				DDE0002A1886E6B91DB784EECE834EC8 /* EMOCRImageCropBox.h in Headers */,
-				EABC2674B51AF3F1B0037164DAB1EEFE /* EMOCRImageCropView.h in Headers */,
-				A5120C900C9ACF8BEBD7E6D3B14A7AAA /* UIBezierPath+Utility.h in Headers */,
-				1514C3C4A51180FCCAAD50BAC4CD0E3A /* UIImage+Utility.h in Headers */,
-				F1FE59821EAD78E8F437EB839A910272 /* UIImageView+Utility.h in Headers */,
-				89599A533E086E0FC32739D5C0D984F0 /* UIView+ECAutolayoutService.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -327,9 +327,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FCC0356C5F0F0FA3045561606FC1BC19 /* Build configuration list for PBXNativeTarget "EasyCrop" */;
 			buildPhases = (
-				1A7F26AD675B448CE33BADF56FBE176E /* Sources */,
+				A0B1B8C454340D0AA83038867630C7C6 /* Sources */,
 				C9DF85274F5B9CF35702331E48ED027E /* Frameworks */,
-				F2494A7DE97CCEFFD47DD669BB7ECC18 /* Headers */,
+				15C7E556A6DAE613F0B5DB15994090C5 /* Headers */,
 			);
 			buildRules = (
 			);
@@ -404,23 +404,6 @@
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		1A7F26AD675B448CE33BADF56FBE176E /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				8C028E71A5E057323E355AB343A7408E /* EasyCrop-dummy.m in Sources */,
-				CC6AF893B559989459F066B188BD7BAC /* ECCropBoxFrameConverter.m in Sources */,
-				41A53F5231C794EDFF17DB9C40254165 /* ECGraphicsUtility.m in Sources */,
-				5695523B0E0221C06D7026B28E63F6DE /* ECLayerAnimationMaker.m in Sources */,
-				CB978B73A0AA9C30E3A5156B1D17CB9E /* EMOCRImageCropBox.m in Sources */,
-				4E4F372929F1CE044BB359364C16F5BC /* EMOCRImageCropView.m in Sources */,
-				B1AD803CF250675BAA840164401060C4 /* UIBezierPath+Utility.m in Sources */,
-				ECA907956E4FEF1DED99BB410E936996 /* UIImage+Utility.m in Sources */,
-				BF1278A67D9E0CE45FE57CA463B1B170 /* UIImageView+Utility.m in Sources */,
-				16E60C94BAB5748E4936F96540590222 /* UIView+ECAutolayoutService.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		2D632A1F36239994C728BE2B2D66CF2B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -434,6 +417,23 @@
 			buildActionMask = 2147483647;
 			files = (
 				A153AC29888CB5797C699479D3E29D8E /* Pods-EasyCrop_Example-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A0B1B8C454340D0AA83038867630C7C6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				23853921E78F77BC4C10432F252F99CB /* EasyCrop-dummy.m in Sources */,
+				2762A43F4FA6D37B693D18B604D03C1D /* ECCropBoxFrameConverter.m in Sources */,
+				5751B07463C33DB44F3BC4DC1E9FDBC5 /* ECGraphicsUtility.m in Sources */,
+				1529218F2451AE2EEF7659B693E85219 /* ECImageCropBox.m in Sources */,
+				420774E4BA33CE80A65A309D6783A0F2 /* ECImageCropView.m in Sources */,
+				7C864C58665F1D29FA2D5B76C299B9C7 /* ECLayerAnimationMaker.m in Sources */,
+				A906C867E96C27FA87B08C3151CF174B /* UIBezierPath+Utility.m in Sources */,
+				CDFA87EBFD264126EC0FFDE06DACD046 /* UIImage+Utility.m in Sources */,
+				2AC92A626CAB78EBA11CE0444D16F539 /* UIImageView+Utility.m in Sources */,
+				EA72F697605DA83E89C77CA36A758F2D /* UIView+ECAutolayoutService.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -696,7 +696,7 @@
 		};
 		C6B19061C1FE71F14ABD7099CD9DD448 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 721B16C45674F609F6FB6DC282FAC1E1 /* EasyCrop.xcconfig */;
+			baseConfigurationReference = B8DCEFF6827F4C7D2C2D248C8277FA07 /* EasyCrop.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -725,7 +725,7 @@
 		};
 		FB3D33E6E2797444A28E49FC16B8EA74 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 721B16C45674F609F6FB6DC282FAC1E1 /* EasyCrop.xcconfig */;
+			baseConfigurationReference = B8DCEFF6827F4C7D2C2D248C8277FA07 /* EasyCrop.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";

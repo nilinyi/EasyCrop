@@ -8,6 +8,6 @@
 #ifndef EasyCrop_h
 #define EasyCrop_h
 
-#import "EMOCRImageCropView.h"
+#import "ECImageCropView.h"
 
 #endif /* EasyCrop_h */

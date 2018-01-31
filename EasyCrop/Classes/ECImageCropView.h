@@ -1,5 +1,5 @@
 //
-//  EMOCRImageCropView.h
+//  ECImageCropView.h
 //  EasyMenu
 //
 //  Created by Leo Ni on 6/4/17.
@@ -10,7 +10,7 @@
 /**
  An UIView for croping image.
  */
-@interface EMOCRImageCropView : UIView
+@interface ECImageCropView : UIView
 @property (nonatomic, readwrite, strong) UIImage *image;
 @property (nonatomic, readonly, strong) UIImage *croppedImage;
 @property (atomic, readonly, assign) BOOL isGestureBusy;

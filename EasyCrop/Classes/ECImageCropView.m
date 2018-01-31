@@ -1,16 +1,16 @@
 //
-//  EMOCRImageCropView.m
+//  ECImageCropView.m
 //  EasyMenu
 //
 //  Created by Leo Ni on 6/4/17.
 //  Copyright © 2017 ShaoXianDui. All rights reserved.
 //
 
-#import "EMOCRImageCropBox.h"
+#import "ECImageCropBox.h"
 #import "ECGraphicsUtility.h"
 #import "ECLayerAnimationMaker.h"
 #import "UIImageView+Utility.h"
-#import "EMOCRImageCropView.h"
+#import "ECImageCropView.h"
 #import "UIBezierPath+Utility.h"
 #import "UIImage+Utility.h"
 #import <AVFoundation/AVFoundation.h>
@@ -22,13 +22,13 @@
 #   define DLog(...)
 #endif
 
-@interface EMOCRImageCropView () <EMOCRImageCropBoxDelegate, UIGestureRecognizerDelegate>
+@interface ECImageCropView () <ECImageCropBoxDelegate, UIGestureRecognizerDelegate>
 
 # pragma mark - Public 
 @property (atomic, readwrite, assign) BOOL isGestureBusy;
 
 # pragma mark - Subviews
-@property (nonatomic, readwrite, strong) EMOCRImageCropBox *cropBox;
+@property (nonatomic, readwrite, strong) ECImageCropBox *cropBox;
 @property (nonatomic, readwrite, strong) UIImageView *imageView;
 
 # pragma mark - Shadow and highlight areas
@@ -44,7 +44,7 @@
 
 @end
 
-@implementation EMOCRImageCropView {
+@implementation ECImageCropView {
     CGRect _initialImageViewFrame; // Transform Bug required.
 }
 
@@ -69,7 +69,7 @@ const CGFloat MIN_IMAGE_SCALE = 0.7;
         // transform originalboxFrame to actualBoxFrame
         actualBoxFrame = CGRectApplyAffineTransform(boxFrame, t);
     }
-    self.cropBox = [[EMOCRImageCropBox alloc] initWithFrame:actualBoxFrame inOCRImageCropView:self];
+    self.cropBox = [[ECImageCropBox alloc] initWithFrame:actualBoxFrame inOCRImageCropView:self];
     [self addSubview:self.cropBox];
 
     // show highlighted layer
@@ -277,36 +277,36 @@ const CGFloat MIN_IMAGE_SCALE = 0.7;
     return ![self.cropBox isPointInsideTouchArea:touchPoint];
 }
 
-# pragma mark - EMOCRImageCropViewDelegate
+# pragma mark - ECImageCropViewDelegate
 /**
  * Began and move of gestures will cancel all anchorings.
  * Designated anchoring will be triggered everytime gesture is finished.(If needed)
  *
  **/
 
-- (CGRect)boundaryForCropBox:(EMOCRImageCropBox *)cropBox {
+- (CGRect)boundaryForCropBox:(ECImageCropBox *)cropBox {
     return [self.imageView imageFrameAfterAspectFitScaled];
 }
 
-- (BOOL)cropBox:(EMOCRImageCropBox *)cropBox canPerformGesture:(UIGestureRecognizer *)gesture {
+- (BOOL)cropBox:(ECImageCropBox *)cropBox canPerformGesture:(UIGestureRecognizer *)gesture {
     return !self.isAnchoring && !self.isGestureBusy;
 }
 
-- (void)cropBox:(EMOCRImageCropBox *)cropBox gestureBegan:(UIGestureRecognizer *)gesture {
+- (void)cropBox:(ECImageCropBox *)cropBox gestureBegan:(UIGestureRecognizer *)gesture {
     // Stop the anchor of crop box
     [NSObject cancelPreviousPerformRequestsWithTarget:self selector:@selector(p_autoAnchorCropBox) object:nil];
 }
 
-- (void)cropBox:(EMOCRImageCropBox *)cropBox gestureWillMove:(UIGestureRecognizer *)gesture {
+- (void)cropBox:(ECImageCropBox *)cropBox gestureWillMove:(UIGestureRecognizer *)gesture {
 }
 
-- (void)cropBox:(EMOCRImageCropBox *)cropBox gestureDidMove:(UIGestureRecognizer *)gesture {
+- (void)cropBox:(ECImageCropBox *)cropBox gestureDidMove:(UIGestureRecognizer *)gesture {
     // 每次手势移动的时候, 让高亮区跟着cropBox走!
     UIBezierPath *newPath = [self p_createPathWithHighlightedRect:cropBox.cropBoxFrameWithLineWidth];
     self.highlightedLayer.path = newPath.CGPath;
 }
 
-- (void)cropBox:(EMOCRImageCropBox *)cropBox gestureStopped:(UIGestureRecognizer *)gesture {
+- (void)cropBox:(ECImageCropBox *)cropBox gestureStopped:(UIGestureRecognizer *)gesture {
     if (cropBox.numOfGesturesInProcessing == 0) {
         // Start anchor crop box if this is the last active crop box which stop gesture
         // 这里不能使用isGestureBusy!!!
@@ -359,7 +359,7 @@ const CGFloat MIN_IMAGE_SCALE = 0.7;
 
     // Path animation
     CGPathRef startPath = self.highlightedLayer.path;
-    CGRect finalBoxRectWithLineWidth = UIEdgeInsetsInsetRect(finalBoxRect, UIEdgeInsetsMake(-EMOCRImageCropBox.lineWidth, -EMOCRImageCropBox.lineWidth, -EMOCRImageCropBox.lineWidth, -EMOCRImageCropBox.lineWidth));
+    CGRect finalBoxRectWithLineWidth = UIEdgeInsetsInsetRect(finalBoxRect, UIEdgeInsetsMake(-ECImageCropBox.lineWidth, -ECImageCropBox.lineWidth, -ECImageCropBox.lineWidth, -ECImageCropBox.lineWidth));
     CGPathRef endPath = [self p_createPathWithHighlightedRect:finalBoxRectWithLineWidth].CGPath;
     CAAnimation *pathAnimation = [ECLayerAnimationMaker layerAnimationFromPath:startPath toPath:endPath withDuration:0.2];
     [self.highlightedLayer addAnimation:pathAnimation forKey:nil];

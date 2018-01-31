@@ -12,8 +12,8 @@
 
 #import "EasyCrop.h"
 #import "ECCropBoxFrameConverter.h"
-#import "EMOCRImageCropBox.h"
-#import "EMOCRImageCropView.h"
+#import "ECImageCropBox.h"
+#import "ECImageCropView.h"
 #import "ECGraphicsUtility.h"
 #import "ECLayerAnimationMaker.h"
 #import "UIBezierPath+Utility.h"
