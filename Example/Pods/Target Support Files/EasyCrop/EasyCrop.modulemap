@@ -1,0 +1,6 @@
+framework module EasyCrop {
+  umbrella header "EasyCrop-umbrella.h"
+
+  export *
+  module * { export * }
+}

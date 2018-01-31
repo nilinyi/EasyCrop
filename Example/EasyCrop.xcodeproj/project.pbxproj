@@ -41,7 +41,7 @@
 		19FEBA70BB81FC11783497CA /* Pods-EasyCrop_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EasyCrop_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-EasyCrop_Tests/Pods-EasyCrop_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		1A59B186EC807FE252721703 /* Pods-EasyCrop_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EasyCrop_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-EasyCrop_Example/Pods-EasyCrop_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		3A2EDBCD31C3A81390638D32 /* Pods_EasyCrop_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EasyCrop_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		3C6E1F47F4DA9DC2DA096C65 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		3C6E1F47F4DA9DC2DA096C65 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		3DED94C005706B7067CDBFBE /* Pods_EasyCrop_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EasyCrop_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58A195388D20070C39A /* EasyCrop_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EasyCrop_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -64,8 +64,8 @@
 		606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
 		71719F9E1E33DC2100824A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		A4730DD4F5477454B2095C30 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
-		A6E3CA942DA529C0C64B873F /* EasyCrop.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = EasyCrop.podspec; path = ../EasyCrop.podspec; sourceTree = "<group>"; };
+		A4730DD4F5477454B2095C30 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		A6E3CA942DA529C0C64B873F /* EasyCrop.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = EasyCrop.podspec; path = ../EasyCrop.podspec; sourceTree = "<group>"; };
 		F6F296A900EE553897F6E685 /* Pods-EasyCrop_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EasyCrop_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-EasyCrop_Tests/Pods-EasyCrop_Tests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -250,7 +250,11 @@
 				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = nilinyi;
 				TargetAttributes = {
+					6003F589195388D20070C39A = {
+						DevelopmentTeam = 372W55KC55;
+					};
 					6003F5AD195388D20070C39A = {
+						DevelopmentTeam = 372W55KC55;
 						TestTargetID = 6003F589195388D20070C39A;
 					};
 				};
@@ -533,6 +537,7 @@
 			baseConfigurationReference = 1A59B186EC807FE252721703 /* Pods-EasyCrop_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 372W55KC55;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "EasyCrop/EasyCrop-Prefix.pch";
 				INFOPLIST_FILE = "EasyCrop/EasyCrop-Info.plist";
@@ -548,6 +553,7 @@
 			baseConfigurationReference = 1867DCF7507E3F5DA053435A /* Pods-EasyCrop_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 372W55KC55;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "EasyCrop/EasyCrop-Prefix.pch";
 				INFOPLIST_FILE = "EasyCrop/EasyCrop-Info.plist";
@@ -563,6 +569,7 @@
 			baseConfigurationReference = 19FEBA70BB81FC11783497CA /* Pods-EasyCrop_Tests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 372W55KC55;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -587,6 +594,7 @@
 			baseConfigurationReference = F6F296A900EE553897F6E685 /* Pods-EasyCrop_Tests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 372W55KC55;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",

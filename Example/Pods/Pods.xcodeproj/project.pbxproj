@@ -1,0 +1,713 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0CED8010879BEE8E8775797448B60F58 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		2A3643A825537E7CE8D1E0BD4CB43DDF /* Pods-EasyCrop_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = AE399BEF2A1445410BD9E1DA123E12C6 /* Pods-EasyCrop_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4AFE5447C0E3DAACAE22262645671D64 /* Pods-EasyCrop_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 624BCD851A8AC31E7487B2B81D274617 /* Pods-EasyCrop_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4EFE8760DF1172572C2118180467096E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		512D7EE483DCC6A91829A5C5333CBC62 /* EasyCrop-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E5F05AD7E6478C5539A3CC51214ED5A /* EasyCrop-dummy.m */; };
+		A153AC29888CB5797C699479D3E29D8E /* Pods-EasyCrop_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = AC482CC4C567221BA1F321D80835F55D /* Pods-EasyCrop_Example-dummy.m */; };
+		ADECB9FB0C8132D59E230B4D2A389C7C /* EasyCrop-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 883AF3FBE80F3E0F542026AB88186878 /* EasyCrop-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B0DF6DB3B14E42F649906AADA16670CE /* Pods-EasyCrop_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9143498131141B8655BDC218C494ACFA /* Pods-EasyCrop_Tests-dummy.m */; };
+		C7892DA908327413D2A1A116D110F582 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F012D69935F1F4BBD725D3ED60496767 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1B7F8DCE47BD79FDD5D48BE90FB992B4;
+			remoteInfo = EasyCrop;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0B78D4B3A34EE3E529044E54312DD8B6 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		21C60BF8EAAF0E05A3D186DF7C920790 /* Pods-EasyCrop_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-EasyCrop_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		233EDCACF2C928DF172138540997E29F /* Pods-EasyCrop_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-EasyCrop_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		28D4CDF8965BD9972834ECBF1171BD98 /* Pods-EasyCrop_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-EasyCrop_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		2E5F05AD7E6478C5539A3CC51214ED5A /* EasyCrop-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "EasyCrop-dummy.m"; sourceTree = "<group>"; };
+		4003419C049ECF2B9B57117E3A13BF38 /* Pods-EasyCrop_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-EasyCrop_Tests-frameworks.sh"; sourceTree = "<group>"; };
+		41C5A61F74669ED89DA15C14CE8FB4AC /* Pods-EasyCrop_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-EasyCrop_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		44A61605BF4F65175F8BCAAE7DBF1F9F /* EasyCrop.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = EasyCrop.modulemap; sourceTree = "<group>"; };
+		467490C6128F2D9F6CCC9678FE3D7DC7 /* EasyCrop.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = EasyCrop.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4743C8A2B4CB95AEE595008F76E1EE54 /* Pods-EasyCrop_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-EasyCrop_Example.release.xcconfig"; sourceTree = "<group>"; };
+		624BCD851A8AC31E7487B2B81D274617 /* Pods-EasyCrop_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-EasyCrop_Tests-umbrella.h"; sourceTree = "<group>"; };
+		6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		6608C16303B861F7CD5721327FA85B08 /* Pods-EasyCrop_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-EasyCrop_Example-frameworks.sh"; sourceTree = "<group>"; };
+		69D8B3C80447F0606412A984251BF04E /* Pods-EasyCrop_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-EasyCrop_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		772C57455BA5008B6658FC912A7CD3D1 /* EasyCrop.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; path = EasyCrop.podspec; sourceTree = "<group>"; };
+		7993BE4AE781B375F2292477AC2B79A4 /* Pods-EasyCrop_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-EasyCrop_Example-resources.sh"; sourceTree = "<group>"; };
+		85EB8FA430B9477917C274322FE431D8 /* Pods_EasyCrop_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EasyCrop_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8663DE473EA03580A3EE575B1B6B6467 /* Pods_EasyCrop_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EasyCrop_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		883AF3FBE80F3E0F542026AB88186878 /* EasyCrop-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "EasyCrop-umbrella.h"; sourceTree = "<group>"; };
+		9031BA5884EC42F95C63FB1E6420288D /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9143498131141B8655BDC218C494ACFA /* Pods-EasyCrop_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-EasyCrop_Tests-dummy.m"; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		97381597A6E123C6736E9EFEE96E0BAF /* Pods-EasyCrop_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-EasyCrop_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		9AAE5069BFEDF172409E2F44D7567C07 /* Pods-EasyCrop_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-EasyCrop_Tests-resources.sh"; sourceTree = "<group>"; };
+		A1376ADA19405616CDE7379F105FF77F /* EasyCrop-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "EasyCrop-prefix.pch"; sourceTree = "<group>"; };
+		AC482CC4C567221BA1F321D80835F55D /* Pods-EasyCrop_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-EasyCrop_Example-dummy.m"; sourceTree = "<group>"; };
+		AE399BEF2A1445410BD9E1DA123E12C6 /* Pods-EasyCrop_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-EasyCrop_Example-umbrella.h"; sourceTree = "<group>"; };
+		AF59FBE69ABCE1E769AA1028A0945907 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CA69078D04C81A39B09053A9908D49EF /* Pods-EasyCrop_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-EasyCrop_Tests.modulemap"; sourceTree = "<group>"; };
+		D575734F7E379DD1288F32FE12799722 /* Pods-EasyCrop_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-EasyCrop_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		DEAA4E9DDE051C4C2BDDA4776436CC6C /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		E2CF52FBB316C2C5FAA601959B347B9A /* Pods-EasyCrop_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-EasyCrop_Example.modulemap"; sourceTree = "<group>"; };
+		EE635FB3928752AE1942CBAB09DC358E /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		F894F5BD93BAC91825D54DBA4B140D8D /* EasyCrop.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = EasyCrop.xcconfig; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		26A7CFF5EAE9F74391D5566CB70711E6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4EFE8760DF1172572C2118180467096E /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B42E2C43358B3A5C7177A98DBB45FE17 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0CED8010879BEE8E8775797448B60F58 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E9675D52340988E47ADC0773BF9111EF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C7892DA908327413D2A1A116D110F582 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3E530A6CEB1755C6C0E977E5190F8C05 /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CE8B6353FCF22CCE1FC497F7FE3007E8 /* EasyCrop */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		4191BE5B314DC003E6959DDD1C322C61 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				44A61605BF4F65175F8BCAAE7DBF1F9F /* EasyCrop.modulemap */,
+				F894F5BD93BAC91825D54DBA4B140D8D /* EasyCrop.xcconfig */,
+				2E5F05AD7E6478C5539A3CC51214ED5A /* EasyCrop-dummy.m */,
+				A1376ADA19405616CDE7379F105FF77F /* EasyCrop-prefix.pch */,
+				883AF3FBE80F3E0F542026AB88186878 /* EasyCrop-umbrella.h */,
+				9031BA5884EC42F95C63FB1E6420288D /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/EasyCrop";
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				3E530A6CEB1755C6C0E977E5190F8C05 /* Development Pods */,
+				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
+				C146CB9963FABF49FE9F0E73517F63DE /* Products */,
+				9AD9883B3F1280A1DC9DB6DAD556453F /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		9AD9883B3F1280A1DC9DB6DAD556453F /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				EE409D557E7FC9FBEE6A28A4B85C2EE8 /* Pods-EasyCrop_Example */,
+				C4DA0959BC2383225FD3CEEC785C96FD /* Pods-EasyCrop_Tests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D35AF013A5F0BAD4F32504907A52519E /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C146CB9963FABF49FE9F0E73517F63DE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				467490C6128F2D9F6CCC9678FE3D7DC7 /* EasyCrop.framework */,
+				85EB8FA430B9477917C274322FE431D8 /* Pods_EasyCrop_Example.framework */,
+				8663DE473EA03580A3EE575B1B6B6467 /* Pods_EasyCrop_Tests.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C4DA0959BC2383225FD3CEEC785C96FD /* Pods-EasyCrop_Tests */ = {
+			isa = PBXGroup;
+			children = (
+				0B78D4B3A34EE3E529044E54312DD8B6 /* Info.plist */,
+				CA69078D04C81A39B09053A9908D49EF /* Pods-EasyCrop_Tests.modulemap */,
+				69D8B3C80447F0606412A984251BF04E /* Pods-EasyCrop_Tests-acknowledgements.markdown */,
+				233EDCACF2C928DF172138540997E29F /* Pods-EasyCrop_Tests-acknowledgements.plist */,
+				9143498131141B8655BDC218C494ACFA /* Pods-EasyCrop_Tests-dummy.m */,
+				4003419C049ECF2B9B57117E3A13BF38 /* Pods-EasyCrop_Tests-frameworks.sh */,
+				9AAE5069BFEDF172409E2F44D7567C07 /* Pods-EasyCrop_Tests-resources.sh */,
+				624BCD851A8AC31E7487B2B81D274617 /* Pods-EasyCrop_Tests-umbrella.h */,
+				D575734F7E379DD1288F32FE12799722 /* Pods-EasyCrop_Tests.debug.xcconfig */,
+				41C5A61F74669ED89DA15C14CE8FB4AC /* Pods-EasyCrop_Tests.release.xcconfig */,
+			);
+			name = "Pods-EasyCrop_Tests";
+			path = "Target Support Files/Pods-EasyCrop_Tests";
+			sourceTree = "<group>";
+		};
+		CE8B6353FCF22CCE1FC497F7FE3007E8 /* EasyCrop */ = {
+			isa = PBXGroup;
+			children = (
+				E74D033B0F22FE0187F12286B7E64362 /* Pod */,
+				4191BE5B314DC003E6959DDD1C322C61 /* Support Files */,
+			);
+			name = EasyCrop;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		D35AF013A5F0BAD4F32504907A52519E /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		E74D033B0F22FE0187F12286B7E64362 /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				772C57455BA5008B6658FC912A7CD3D1 /* EasyCrop.podspec */,
+				DEAA4E9DDE051C4C2BDDA4776436CC6C /* LICENSE */,
+				EE635FB3928752AE1942CBAB09DC358E /* README.md */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
+		EE409D557E7FC9FBEE6A28A4B85C2EE8 /* Pods-EasyCrop_Example */ = {
+			isa = PBXGroup;
+			children = (
+				AF59FBE69ABCE1E769AA1028A0945907 /* Info.plist */,
+				E2CF52FBB316C2C5FAA601959B347B9A /* Pods-EasyCrop_Example.modulemap */,
+				97381597A6E123C6736E9EFEE96E0BAF /* Pods-EasyCrop_Example-acknowledgements.markdown */,
+				28D4CDF8965BD9972834ECBF1171BD98 /* Pods-EasyCrop_Example-acknowledgements.plist */,
+				AC482CC4C567221BA1F321D80835F55D /* Pods-EasyCrop_Example-dummy.m */,
+				6608C16303B861F7CD5721327FA85B08 /* Pods-EasyCrop_Example-frameworks.sh */,
+				7993BE4AE781B375F2292477AC2B79A4 /* Pods-EasyCrop_Example-resources.sh */,
+				AE399BEF2A1445410BD9E1DA123E12C6 /* Pods-EasyCrop_Example-umbrella.h */,
+				21C60BF8EAAF0E05A3D186DF7C920790 /* Pods-EasyCrop_Example.debug.xcconfig */,
+				4743C8A2B4CB95AEE595008F76E1EE54 /* Pods-EasyCrop_Example.release.xcconfig */,
+			);
+			name = "Pods-EasyCrop_Example";
+			path = "Target Support Files/Pods-EasyCrop_Example";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		109A9B2330E51D3439C258A92BD76994 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4AFE5447C0E3DAACAE22262645671D64 /* Pods-EasyCrop_Tests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3A0C47235759B0689A7EB80CCDB408A6 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2A3643A825537E7CE8D1E0BD4CB43DDF /* Pods-EasyCrop_Example-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		48CD7C7919F1F3625873776B0338F706 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ADECB9FB0C8132D59E230B4D2A389C7C /* EasyCrop-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		1B7F8DCE47BD79FDD5D48BE90FB992B4 /* EasyCrop */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6661029796F2A6E100495EB2E1E11574 /* Build configuration list for PBXNativeTarget "EasyCrop" */;
+			buildPhases = (
+				10BEB25BF2F631D6DD971912E023A77B /* Sources */,
+				26A7CFF5EAE9F74391D5566CB70711E6 /* Frameworks */,
+				48CD7C7919F1F3625873776B0338F706 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = EasyCrop;
+			productName = EasyCrop;
+			productReference = 467490C6128F2D9F6CCC9678FE3D7DC7 /* EasyCrop.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		5B8DBA903DCB0DF4A892DD464533EA5A /* Pods-EasyCrop_Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 73968C99FEEC56B7AC62EBC5AEB6CF87 /* Build configuration list for PBXNativeTarget "Pods-EasyCrop_Tests" */;
+			buildPhases = (
+				2D632A1F36239994C728BE2B2D66CF2B /* Sources */,
+				E9675D52340988E47ADC0773BF9111EF /* Frameworks */,
+				109A9B2330E51D3439C258A92BD76994 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-EasyCrop_Tests";
+			productName = "Pods-EasyCrop_Tests";
+			productReference = 8663DE473EA03580A3EE575B1B6B6467 /* Pods_EasyCrop_Tests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		813DCC0336FFED175403EDFC63F21FBE /* Pods-EasyCrop_Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 40C613E5A2BBDF49810CBBC8C2872524 /* Build configuration list for PBXNativeTarget "Pods-EasyCrop_Example" */;
+			buildPhases = (
+				5FC52D61C61FDE8C8B246909290B37B0 /* Sources */,
+				B42E2C43358B3A5C7177A98DBB45FE17 /* Frameworks */,
+				3A0C47235759B0689A7EB80CCDB408A6 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B22A1EBF70E3BE06F410BDE76B51432A /* PBXTargetDependency */,
+			);
+			name = "Pods-EasyCrop_Example";
+			productName = "Pods-EasyCrop_Example";
+			productReference = 85EB8FA430B9477917C274322FE431D8 /* Pods_EasyCrop_Example.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = C146CB9963FABF49FE9F0E73517F63DE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1B7F8DCE47BD79FDD5D48BE90FB992B4 /* EasyCrop */,
+				813DCC0336FFED175403EDFC63F21FBE /* Pods-EasyCrop_Example */,
+				5B8DBA903DCB0DF4A892DD464533EA5A /* Pods-EasyCrop_Tests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		10BEB25BF2F631D6DD971912E023A77B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				512D7EE483DCC6A91829A5C5333CBC62 /* EasyCrop-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2D632A1F36239994C728BE2B2D66CF2B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B0DF6DB3B14E42F649906AADA16670CE /* Pods-EasyCrop_Tests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5FC52D61C61FDE8C8B246909290B37B0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A153AC29888CB5797C699479D3E29D8E /* Pods-EasyCrop_Example-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B22A1EBF70E3BE06F410BDE76B51432A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = EasyCrop;
+			target = 1B7F8DCE47BD79FDD5D48BE90FB992B4 /* EasyCrop */;
+			targetProxy = F012D69935F1F4BBD725D3ED60496767 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		0ED1E8083FE10E85CC021E235FBC12D3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 41C5A61F74669ED89DA15C14CE8FB4AC /* Pods-EasyCrop_Tests.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-EasyCrop_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-EasyCrop_Tests/Pods-EasyCrop_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_EasyCrop_Tests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		18F07FB5F95AB47F29FFA2476D3975BE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 21C60BF8EAAF0E05A3D186DF7C920790 /* Pods-EasyCrop_Example.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-EasyCrop_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-EasyCrop_Example/Pods-EasyCrop_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_EasyCrop_Example;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		33DA7F43A1D2FA3C74A8C8FC246E1FA6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		45B59A57DAB9C6DCA79E41C09884E0A0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F894F5BD93BAC91825D54DBA4B140D8D /* EasyCrop.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/EasyCrop/EasyCrop-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/EasyCrop/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/EasyCrop/EasyCrop.modulemap";
+				PRODUCT_NAME = EasyCrop;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		6C37F7D3D27BF28359B94B3A42D568D7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D575734F7E379DD1288F32FE12799722 /* Pods-EasyCrop_Tests.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-EasyCrop_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-EasyCrop_Tests/Pods-EasyCrop_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_EasyCrop_Tests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		731DC216E1A58545B559F6E0A2418060 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		79CFDDF8A5E64D2CBD8B7BFAB416E2A0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4743C8A2B4CB95AEE595008F76E1EE54 /* Pods-EasyCrop_Example.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-EasyCrop_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-EasyCrop_Example/Pods-EasyCrop_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_EasyCrop_Example;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		C167C17178338FFC8D7DB34E0315A0CB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F894F5BD93BAC91825D54DBA4B140D8D /* EasyCrop.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/EasyCrop/EasyCrop-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/EasyCrop/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/EasyCrop/EasyCrop.modulemap";
+				PRODUCT_NAME = EasyCrop;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				33DA7F43A1D2FA3C74A8C8FC246E1FA6 /* Debug */,
+				731DC216E1A58545B559F6E0A2418060 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		40C613E5A2BBDF49810CBBC8C2872524 /* Build configuration list for PBXNativeTarget "Pods-EasyCrop_Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				18F07FB5F95AB47F29FFA2476D3975BE /* Debug */,
+				79CFDDF8A5E64D2CBD8B7BFAB416E2A0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6661029796F2A6E100495EB2E1E11574 /* Build configuration list for PBXNativeTarget "EasyCrop" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C167C17178338FFC8D7DB34E0315A0CB /* Debug */,
+				45B59A57DAB9C6DCA79E41C09884E0A0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		73968C99FEEC56B7AC62EBC5AEB6CF87 /* Build configuration list for PBXNativeTarget "Pods-EasyCrop_Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6C37F7D3D27BF28359B94B3A42D568D7 /* Debug */,
+				0ED1E8083FE10E85CC021E235FBC12D3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}

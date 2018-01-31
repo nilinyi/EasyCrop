@@ -1,0 +1,16 @@
+PODS:
+  - EasyCrop (0.1.0)
+
+DEPENDENCIES:
+  - EasyCrop (from `../`)
+
+EXTERNAL SOURCES:
+  EasyCrop:
+    :path: ../
+
+SPEC CHECKSUMS:
+  EasyCrop: 3c99a00459c20da5514eda5161f19aa117f9b187
+
+PODFILE CHECKSUM: 5bc9621cf57cde5e9f2cdf31fd385aad5ad0bd5b
+
+COCOAPODS: 1.4.0
