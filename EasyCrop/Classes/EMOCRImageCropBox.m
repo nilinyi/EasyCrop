@@ -6,6 +6,7 @@
 //  Copyright © 2017 ShaoXianDui. All rights reserved.
 //
 
+#import <UIKit/UIKit.h>
 #import "EMOCRImageCropBox.h"
 #import "EMOCRImageCropView.h"
 #import "EMCropBoxFrameConverter.h"

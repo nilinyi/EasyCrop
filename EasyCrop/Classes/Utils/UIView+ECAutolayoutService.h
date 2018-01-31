@@ -6,6 +6,8 @@
 //  Copyright © 2017 ShaoXianDui. All rights reserved.
 //
 
+#import <UIKit/UIKit.h>
+
 typedef NSArray<NSLayoutConstraint *> ECConstraints;
 
 @interface UIView (ECAutolayoutService)

@@ -6,6 +6,8 @@
 //  Copyright © 2017 ShaoXianDui. All rights reserved.
 //
 
+#import <UIKit/UIKit.h>
+
 /**
  因为cropBox的构成是从内到外由 1.内部图片显示区域, 2.图片外侧边缘线 3.边缘线外侧的延展触摸区 所构成的. 该类可以方便地根据其中任何一个矩形的frame计算出其他矩形的frame.
  */

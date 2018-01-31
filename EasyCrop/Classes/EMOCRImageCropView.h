@@ -6,7 +6,6 @@
 //  Copyright © 2017 ShaoXianDui. All rights reserved.
 //
 
-#import "EMOCRImageCropBox.h"
 
 /**
  An UIView for croping image.

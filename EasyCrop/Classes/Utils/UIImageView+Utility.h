@@ -5,7 +5,7 @@
 //  Created by Leo Ni on 1/31/18.
 //
 
-#import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
 
 @interface UIImageView (Utility)
 

@@ -7,9 +7,10 @@
 //
 
 #import "ECViewController.h"
+#import <EasyCrop/EasyCrop.h>
 
 @interface ECViewController ()
-
+@property (nonatomic, readwrite, strong) EMOCRImageCropView *cropImageView;
 @end
 
 @implementation ECViewController
@@ -17,13 +18,20 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+    [self.view addSubview:self.cropImageView];
 }
 
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (void)viewDidLayoutSubviews {
+    [super viewDidLayoutSubviews];
+    self.cropImageView.frame = self.view.bounds;
+}
+
+- (EMOCRImageCropView *)cropImageView {
+    if (_cropImageView) {
+        return _cropImageView;
+    }
+    _cropImageView = [[EMOCRImageCropView alloc] initWithImage:[UIImage imageNamed:@"test_image"]];
+    return _cropImageView;
 }
 
 @end

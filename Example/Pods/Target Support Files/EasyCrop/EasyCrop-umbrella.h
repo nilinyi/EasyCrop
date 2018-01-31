@@ -10,6 +10,16 @@
 #endif
 #endif
 
+#import "EasyCrop.h"
+#import "EMCropBoxFrameConverter.h"
+#import "EMOCRImageCropBox.h"
+#import "EMOCRImageCropView.h"
+#import "ECGraphicsUtility.h"
+#import "ECLayerAnimationMaker.h"
+#import "UIBezierPath+Utility.h"
+#import "UIImage+Utility.h"
+#import "UIImageView+Utility.h"
+#import "UIView+ECAutolayoutService.h"
 
 FOUNDATION_EXPORT double EasyCropVersionNumber;
 FOUNDATION_EXPORT const unsigned char EasyCropVersionString[];
