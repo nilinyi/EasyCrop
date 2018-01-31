@@ -24,6 +24,12 @@
 		8AD84F342022727E00041A8B /* UIBezierPath+Utility.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AD84F322022727E00041A8B /* UIBezierPath+Utility.m */; };
 		8AD84F372022733900041A8B /* UIView+ECAutolayoutService.h in Headers */ = {isa = PBXBuildFile; fileRef = 8AD84F352022733900041A8B /* UIView+ECAutolayoutService.h */; };
 		8AD84F382022733900041A8B /* UIView+ECAutolayoutService.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AD84F362022733900041A8B /* UIView+ECAutolayoutService.m */; };
+		8AD84F3B202274E700041A8B /* EMOCRImageCropBox.h in Headers */ = {isa = PBXBuildFile; fileRef = 8AD84F39202274E700041A8B /* EMOCRImageCropBox.h */; };
+		8AD84F3C202274E700041A8B /* EMOCRImageCropBox.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AD84F3A202274E700041A8B /* EMOCRImageCropBox.m */; };
+		8AD84F412022753200041A8B /* EMCropBoxFrameConverter.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AD84F3D2022753200041A8B /* EMCropBoxFrameConverter.m */; };
+		8AD84F422022753200041A8B /* EMOCRImageCropView.h in Headers */ = {isa = PBXBuildFile; fileRef = 8AD84F3E2022753200041A8B /* EMOCRImageCropView.h */; };
+		8AD84F432022753200041A8B /* EMCropBoxFrameConverter.h in Headers */ = {isa = PBXBuildFile; fileRef = 8AD84F3F2022753200041A8B /* EMCropBoxFrameConverter.h */; };
+		8AD84F442022753200041A8B /* EMOCRImageCropView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AD84F402022753200041A8B /* EMOCRImageCropView.m */; };
 		A153AC29888CB5797C699479D3E29D8E /* Pods-EasyCrop_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = AC482CC4C567221BA1F321D80835F55D /* Pods-EasyCrop_Example-dummy.m */; };
 		ADECB9FB0C8132D59E230B4D2A389C7C /* EasyCrop-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 883AF3FBE80F3E0F542026AB88186878 /* EasyCrop-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B0DF6DB3B14E42F649906AADA16670CE /* Pods-EasyCrop_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9143498131141B8655BDC218C494ACFA /* Pods-EasyCrop_Tests-dummy.m */; };
@@ -72,6 +78,12 @@
 		8AD84F322022727E00041A8B /* UIBezierPath+Utility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBezierPath+Utility.m"; sourceTree = "<group>"; };
 		8AD84F352022733900041A8B /* UIView+ECAutolayoutService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+ECAutolayoutService.h"; sourceTree = "<group>"; };
 		8AD84F362022733900041A8B /* UIView+ECAutolayoutService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+ECAutolayoutService.m"; sourceTree = "<group>"; };
+		8AD84F39202274E700041A8B /* EMOCRImageCropBox.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EMOCRImageCropBox.h; sourceTree = "<group>"; };
+		8AD84F3A202274E700041A8B /* EMOCRImageCropBox.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EMOCRImageCropBox.m; sourceTree = "<group>"; };
+		8AD84F3D2022753200041A8B /* EMCropBoxFrameConverter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EMCropBoxFrameConverter.m; sourceTree = "<group>"; };
+		8AD84F3E2022753200041A8B /* EMOCRImageCropView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EMOCRImageCropView.h; sourceTree = "<group>"; };
+		8AD84F3F2022753200041A8B /* EMCropBoxFrameConverter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EMCropBoxFrameConverter.h; sourceTree = "<group>"; };
+		8AD84F402022753200041A8B /* EMOCRImageCropView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EMOCRImageCropView.m; sourceTree = "<group>"; };
 		9031BA5884EC42F95C63FB1E6420288D /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9143498131141B8655BDC218C494ACFA /* Pods-EasyCrop_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-EasyCrop_Tests-dummy.m"; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
@@ -219,6 +231,12 @@
 			isa = PBXGroup;
 			children = (
 				8AD84F1620226BB300041A8B /* Utils */,
+				8AD84F3F2022753200041A8B /* EMCropBoxFrameConverter.h */,
+				8AD84F3D2022753200041A8B /* EMCropBoxFrameConverter.m */,
+				8AD84F3E2022753200041A8B /* EMOCRImageCropView.h */,
+				8AD84F402022753200041A8B /* EMOCRImageCropView.m */,
+				8AD84F39202274E700041A8B /* EMOCRImageCropBox.h */,
+				8AD84F3A202274E700041A8B /* EMOCRImageCropBox.m */,
 				E74D033B0F22FE0187F12286B7E64362 /* Pod */,
 				4191BE5B314DC003E6959DDD1C322C61 /* Support Files */,
 			);
@@ -290,8 +308,11 @@
 				8AD84F2F202270E300041A8B /* ECLayerAnimationMaker.h in Headers */,
 				ADECB9FB0C8132D59E230B4D2A389C7C /* EasyCrop-umbrella.h in Headers */,
 				8AD84F2720226F5600041A8B /* UIImageView+Utility.h in Headers */,
+				8AD84F422022753200041A8B /* EMOCRImageCropView.h in Headers */,
 				8AD84F372022733900041A8B /* UIView+ECAutolayoutService.h in Headers */,
 				8AD84F332022727E00041A8B /* UIBezierPath+Utility.h in Headers */,
+				8AD84F3B202274E700041A8B /* EMOCRImageCropBox.h in Headers */,
+				8AD84F432022753200041A8B /* EMCropBoxFrameConverter.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -387,9 +408,12 @@
 				512D7EE483DCC6A91829A5C5333CBC62 /* EasyCrop-dummy.m in Sources */,
 				8AD84F2020226E3B00041A8B /* UIImage+Utility.m in Sources */,
 				8AD84F1B20226BD700041A8B /* ECGraphicsUtility.m in Sources */,
+				8AD84F3C202274E700041A8B /* EMOCRImageCropBox.m in Sources */,
 				8AD84F2820226F5600041A8B /* UIImageView+Utility.m in Sources */,
 				8AD84F30202270E300041A8B /* ECLayerAnimationMaker.m in Sources */,
+				8AD84F412022753200041A8B /* EMCropBoxFrameConverter.m in Sources */,
 				8AD84F382022733900041A8B /* UIView+ECAutolayoutService.m in Sources */,
+				8AD84F442022753200041A8B /* EMOCRImageCropView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
