@@ -18,6 +18,8 @@
 		8AD84F2020226E3B00041A8B /* UIImage+Utility.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AD84F1E20226E3B00041A8B /* UIImage+Utility.m */; };
 		8AD84F2720226F5600041A8B /* UIImageView+Utility.h in Headers */ = {isa = PBXBuildFile; fileRef = 8AD84F2520226F5600041A8B /* UIImageView+Utility.h */; };
 		8AD84F2820226F5600041A8B /* UIImageView+Utility.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AD84F2620226F5600041A8B /* UIImageView+Utility.m */; };
+		8AD84F2F202270E300041A8B /* ECLayerAnimationMaker.h in Headers */ = {isa = PBXBuildFile; fileRef = 8AD84F2D202270E300041A8B /* ECLayerAnimationMaker.h */; };
+		8AD84F30202270E300041A8B /* ECLayerAnimationMaker.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AD84F2E202270E300041A8B /* ECLayerAnimationMaker.m */; };
 		A153AC29888CB5797C699479D3E29D8E /* Pods-EasyCrop_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = AC482CC4C567221BA1F321D80835F55D /* Pods-EasyCrop_Example-dummy.m */; };
 		ADECB9FB0C8132D59E230B4D2A389C7C /* EasyCrop-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 883AF3FBE80F3E0F542026AB88186878 /* EasyCrop-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B0DF6DB3B14E42F649906AADA16670CE /* Pods-EasyCrop_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9143498131141B8655BDC218C494ACFA /* Pods-EasyCrop_Tests-dummy.m */; };
@@ -60,6 +62,8 @@
 		8AD84F1E20226E3B00041A8B /* UIImage+Utility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Utility.m"; sourceTree = "<group>"; };
 		8AD84F2520226F5600041A8B /* UIImageView+Utility.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImageView+Utility.h"; sourceTree = "<group>"; };
 		8AD84F2620226F5600041A8B /* UIImageView+Utility.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+Utility.m"; sourceTree = "<group>"; };
+		8AD84F2D202270E300041A8B /* ECLayerAnimationMaker.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ECLayerAnimationMaker.h; sourceTree = "<group>"; };
+		8AD84F2E202270E300041A8B /* ECLayerAnimationMaker.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ECLayerAnimationMaker.m; sourceTree = "<group>"; };
 		9031BA5884EC42F95C63FB1E6420288D /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9143498131141B8655BDC218C494ACFA /* Pods-EasyCrop_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-EasyCrop_Tests-dummy.m"; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
@@ -141,6 +145,8 @@
 		8AD84F1620226BB300041A8B /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				8AD84F2D202270E300041A8B /* ECLayerAnimationMaker.h */,
+				8AD84F2E202270E300041A8B /* ECLayerAnimationMaker.m */,
 				8AD84F1D20226E3B00041A8B /* UIImage+Utility.h */,
 				8AD84F1E20226E3B00041A8B /* UIImage+Utility.m */,
 				8AD84F1A20226BD700041A8B /* ECGraphicsUtility.h */,
@@ -269,6 +275,7 @@
 			files = (
 				8AD84F1C20226BD700041A8B /* ECGraphicsUtility.h in Headers */,
 				8AD84F1F20226E3B00041A8B /* UIImage+Utility.h in Headers */,
+				8AD84F2F202270E300041A8B /* ECLayerAnimationMaker.h in Headers */,
 				ADECB9FB0C8132D59E230B4D2A389C7C /* EasyCrop-umbrella.h in Headers */,
 				8AD84F2720226F5600041A8B /* UIImageView+Utility.h in Headers */,
 			);
@@ -366,6 +373,7 @@
 				8AD84F2020226E3B00041A8B /* UIImage+Utility.m in Sources */,
 				8AD84F1B20226BD700041A8B /* ECGraphicsUtility.m in Sources */,
 				8AD84F2820226F5600041A8B /* UIImageView+Utility.m in Sources */,
+				8AD84F30202270E300041A8B /* ECLayerAnimationMaker.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
