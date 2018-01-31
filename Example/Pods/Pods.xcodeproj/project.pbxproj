@@ -12,6 +12,8 @@
 		4AFE5447C0E3DAACAE22262645671D64 /* Pods-EasyCrop_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 624BCD851A8AC31E7487B2B81D274617 /* Pods-EasyCrop_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4EFE8760DF1172572C2118180467096E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
 		512D7EE483DCC6A91829A5C5333CBC62 /* EasyCrop-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E5F05AD7E6478C5539A3CC51214ED5A /* EasyCrop-dummy.m */; };
+		8AD84F1B20226BD700041A8B /* ECGraphicsUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AD84F1920226BD700041A8B /* ECGraphicsUtility.m */; };
+		8AD84F1C20226BD700041A8B /* ECGraphicsUtility.h in Headers */ = {isa = PBXBuildFile; fileRef = 8AD84F1A20226BD700041A8B /* ECGraphicsUtility.h */; };
 		A153AC29888CB5797C699479D3E29D8E /* Pods-EasyCrop_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = AC482CC4C567221BA1F321D80835F55D /* Pods-EasyCrop_Example-dummy.m */; };
 		ADECB9FB0C8132D59E230B4D2A389C7C /* EasyCrop-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 883AF3FBE80F3E0F542026AB88186878 /* EasyCrop-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B0DF6DB3B14E42F649906AADA16670CE /* Pods-EasyCrop_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9143498131141B8655BDC218C494ACFA /* Pods-EasyCrop_Tests-dummy.m */; };
@@ -48,6 +50,8 @@
 		85EB8FA430B9477917C274322FE431D8 /* Pods_EasyCrop_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EasyCrop_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8663DE473EA03580A3EE575B1B6B6467 /* Pods_EasyCrop_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EasyCrop_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		883AF3FBE80F3E0F542026AB88186878 /* EasyCrop-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "EasyCrop-umbrella.h"; sourceTree = "<group>"; };
+		8AD84F1920226BD700041A8B /* ECGraphicsUtility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ECGraphicsUtility.m; sourceTree = "<group>"; };
+		8AD84F1A20226BD700041A8B /* ECGraphicsUtility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ECGraphicsUtility.h; sourceTree = "<group>"; };
 		9031BA5884EC42F95C63FB1E6420288D /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9143498131141B8655BDC218C494ACFA /* Pods-EasyCrop_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-EasyCrop_Tests-dummy.m"; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
@@ -126,6 +130,16 @@
 			);
 			sourceTree = "<group>";
 		};
+		8AD84F1620226BB300041A8B /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				8AD84F1A20226BD700041A8B /* ECGraphicsUtility.h */,
+				8AD84F1920226BD700041A8B /* ECGraphicsUtility.m */,
+			);
+			name = Utils;
+			path = "New Group";
+			sourceTree = "<group>";
+		};
 		9AD9883B3F1280A1DC9DB6DAD556453F /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -174,6 +188,7 @@
 		CE8B6353FCF22CCE1FC497F7FE3007E8 /* EasyCrop */ = {
 			isa = PBXGroup;
 			children = (
+				8AD84F1620226BB300041A8B /* Utils */,
 				E74D033B0F22FE0187F12286B7E64362 /* Pod */,
 				4191BE5B314DC003E6959DDD1C322C61 /* Support Files */,
 			);
@@ -240,6 +255,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8AD84F1C20226BD700041A8B /* ECGraphicsUtility.h in Headers */,
 				ADECB9FB0C8132D59E230B4D2A389C7C /* EasyCrop-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -333,6 +349,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				512D7EE483DCC6A91829A5C5333CBC62 /* EasyCrop-dummy.m in Sources */,
+				8AD84F1B20226BD700041A8B /* ECGraphicsUtility.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
