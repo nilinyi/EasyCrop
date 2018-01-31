@@ -1,6 +1,6 @@
 //
-//  EMCropBoxFrameConverter.h
-//  EMCropBoxFrameConverter
+//  ECCropBoxFrameConverter.h
+//  ECCropBoxFrameConverter
 //
 //  Created by Leo Ni on 6/19/17.
 //  Copyright © 2017 ShaoXianDui. All rights reserved.
@@ -11,7 +11,7 @@
 /**
  因为cropBox的构成是从内到外由 1.内部图片显示区域, 2.图片外侧边缘线 3.边缘线外侧的延展触摸区 所构成的. 该类可以方便地根据其中任何一个矩形的frame计算出其他矩形的frame.
  */
-@interface EMCropBoxFrameConverter : NSObject
+@interface ECCropBoxFrameConverter : NSObject
 @property (nonatomic, readwrite, assign) CGRect cropBoxFrameWithExtendedAreaAndLineWidth;
 @property (nonatomic, readwrite, assign) CGRect cropBoxFrameWithLineWidth;
 @property (nonatomic, readwrite, assign) CGRect cropBoxFrame;
@@ -21,7 +21,7 @@
 
  @param extendedAreaInsets The outside extended area of the crop box.
  @param lineInsets The edgeInset that constructed from the line width.
- @return A EMCropBoxFrameConverter instance.
+ @return A ECCropBoxFrameConverter instance.
  */
 - (instancetype)initWithExtendedAreaInsets:(UIEdgeInsets)extendedAreaInsets lineInsets:(UIEdgeInsets)lineInsets;
 

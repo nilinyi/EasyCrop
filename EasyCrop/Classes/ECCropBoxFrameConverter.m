@@ -1,14 +1,14 @@
 //
-//  EMCropBoxFrameConverter.m
-//  EMCropBoxFrameConverter
+//  ECCropBoxFrameConverter.m
+//  ECCropBoxFrameConverter
 //
 //  Created by Leo Ni on 6/19/17.
 //  Copyright © 2017 ShaoXianDui. All rights reserved.
 //
 
-#import "EMCropBoxFrameConverter.h"
+#import "ECCropBoxFrameConverter.h"
 
-@implementation EMCropBoxFrameConverter {
+@implementation ECCropBoxFrameConverter {
     UIEdgeInsets _extendedAreaInsets;
     UIEdgeInsets _lineInsets;
     UIEdgeInsets _extendedAreaOutsets;

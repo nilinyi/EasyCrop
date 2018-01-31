@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "EMOCRImageCropBox.h"
 #import "EMOCRImageCropView.h"
-#import "EMCropBoxFrameConverter.h"
+#import "ECCropBoxFrameConverter.h"
 #import "UIView+ECAutolayoutService.h"
 
 @interface EMOCRImageCropBox() <UIGestureRecognizerDelegate>
@@ -38,7 +38,7 @@
     UIView *_bottomLeftCornerTouchArea; // bottom left
     UIView *_topLeftCornerTouchArea; // top left
 
-    EMCropBoxFrameConverter *_cropBoxFrameConverter;
+    ECCropBoxFrameConverter *_cropBoxFrameConverter;
 }
 
 
@@ -59,7 +59,7 @@ const CGSize MinimumCropBoxSize = {75, 75}; // 最小框(不包括边缘线)
     UIEdgeInsets extendedInsets = UIEdgeInsetsMake(-TouchableExtendOutsets.top-LineWidth, -TouchableExtendOutsets.left-LineWidth, -TouchableExtendOutsets.bottom-LineWidth, -TouchableExtendOutsets.right-LineWidth);
     if (self = [super initWithFrame:UIEdgeInsetsInsetRect(frame, extendedInsets)]) {
         _ocrImageCropView = ocrImageCropView;
-        _cropBoxFrameConverter = [[EMCropBoxFrameConverter alloc] initWithExtendedAreaInsets:TouchableExtendOutsets lineInsets:UIEdgeInsetsMake(LineWidth, LineWidth, LineWidth, LineWidth)];
+        _cropBoxFrameConverter = [[ECCropBoxFrameConverter alloc] initWithExtendedAreaInsets:TouchableExtendOutsets lineInsets:UIEdgeInsetsMake(LineWidth, LineWidth, LineWidth, LineWidth)];
         [self p_setupUI];
         [self p_setupGestureRecognizer];
     }

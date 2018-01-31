@@ -24,6 +24,8 @@
 - (void)viewDidLayoutSubviews {
     [super viewDidLayoutSubviews];
     self.cropImageView.frame = self.view.bounds;
+
+    [self.cropImageView setupCropBox];
 }
 
 - (EMOCRImageCropView *)cropImageView {

@@ -106,7 +106,6 @@ const CGFloat MIN_IMAGE_SCALE = 0.7;
 # pragma mark - Initializers
 - (instancetype)initWithImage:(UIImage *)image {
     if (self = [super initWithFrame:CGRectZero]) {
-        // self.translatesAutoresizingMaskIntoConstraints = NO;
         [self p_setupUI];
         [self p_setupGesture];
         self.image = image; // populate imageView
@@ -124,7 +123,6 @@ const CGFloat MIN_IMAGE_SCALE = 0.7;
 
 - (instancetype)initWithCoder:(NSCoder *)aDecoder {
     if (self = [super initWithCoder:aDecoder]) {
-        // self.translatesAutoresizingMaskIntoConstraints = NO;
         [self p_setupUI];
         [self p_setupGesture];
     }
