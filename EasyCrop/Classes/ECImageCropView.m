@@ -18,28 +18,21 @@
 
 @interface ECImageCropView () <ECImageCropBoxDelegate, UIGestureRecognizerDelegate>
 
-@property (atomic, readwrite, assign) BOOL isGestureBusy;
-
 @property (nonatomic, readwrite, strong) ECImageCropBox *cropBox;
 @property (nonatomic, readwrite, strong) UIImageView *imageView;
+@property (nonatomic, readwrite, strong) CAShapeLayer *highlightedLayer; // A layer representing all the background dimmed and highlighted area
 
-/// A layer representing all the background and highlighted area
-@property (nonatomic, readwrite, strong) CAShapeLayer *highlightedLayer;
-
+@property (nonatomic, readwrite, assign) BOOL isGestureBusy;
+@property (nonatomic, readwrite, assign) CGRect initialImageViewFrame; // Should be unnecessary, but required due to the Transform Bug.
 @property (nonatomic, readonly, assign) CGRect imagePresentingFrame;
 @property (nonatomic, readonly, assign) CGRect imageOriginalFrame;
 @property (nonatomic, readonly, assign) BOOL isCropBoxInsideImage;
 @property (nonatomic, readonly, assign) CGRect preferredCropRect;
-@property (atomic, readwrite, assign) BOOL isAnchoring;
+@property (nonatomic, readwrite, assign) BOOL isAnchoring;
 
 @end
 
-@implementation ECImageCropView {
-    CGRect _initialImageViewFrame; // Transform Bug required.
-}
-
-@synthesize isAnchoring = _isAnchoring;
-@synthesize cropLocked = _cropLocked;
+@implementation ECImageCropView
 
 // TODO:
 // Constrain max and min scale
@@ -92,7 +85,7 @@ const CGFloat MIN_IMAGE_SCALE = 0.7;
 
     // Transform Bug required.
     self.imageView.transform = CGAffineTransformIdentity;
-    self.imageView.frame = _initialImageViewFrame;
+    self.imageView.frame = self.initialImageViewFrame;
 
     return YES;
 }
@@ -124,7 +117,7 @@ const CGFloat MIN_IMAGE_SCALE = 0.7;
 }
 
 - (void)didMoveToWindow {
-    _initialImageViewFrame = self.imageView.frame; // Transform Bug required.
+    self.initialImageViewFrame = self.imageView.frame; // Transform Bug required.
 }
 
 # pragma mark - UI setup
@@ -554,26 +547,12 @@ const CGFloat MIN_IMAGE_SCALE = 0.7;
 
 - (void)setCropLocked:(BOOL)cropLocked {
     _cropLocked = cropLocked;
-    self.userInteractionEnabled = !cropLocked;
-}
-
-- (BOOL)cropLocked {
-    @synchronized (self) {
-        return _cropLocked;
-    }
+    self.userInteractionEnabled = cropLocked;
 }
 
 - (void)setIsAnchoring:(BOOL)isAnchoring {
-    @synchronized (self) {
-        _isAnchoring = isAnchoring;
-        self.userInteractionEnabled = !isAnchoring;
-    }
-}
-
-- (BOOL)isAnchoring {
-    @synchronized (self) {
-        return _isAnchoring;
-    }
+    _isAnchoring = isAnchoring;
+    self.userInteractionEnabled = !isAnchoring;
 }
 
 # pragma mark - Lazy Initialization
