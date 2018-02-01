@@ -13,9 +13,9 @@
 #import "UIView+ECAutolayoutService.h"
 
 @interface ECImageCropBox() <UIGestureRecognizerDelegate>
-/// crop区域允许移动的范围, 默认值为crop view的bounds
-@property (nonatomic, readwrite, assign) CGRect boundary;
+@property (nonatomic, readwrite, assign) CGRect boundary; // crop区域允许移动的范围, 默认值为crop view的bounds
 @property (nonatomic, readwrite, strong) NSMutableSet *activeGestureSet;
+@property (nonatomic, readwrite, assign) BOOL isViewLoaded;
 @end
 
 @implementation ECImageCropBox {
@@ -60,10 +60,17 @@ const CGSize MinimumCropBoxSize = {75, 75}; // 最小框(不包括边缘线)
     if (self = [super initWithFrame:UIEdgeInsetsInsetRect(frame, extendedInsets)]) {
         _ocrImageCropView = ocrImageCropView;
         _cropBoxFrameConverter = [[ECCropBoxFrameConverter alloc] initWithExtendedAreaInsets:TouchableExtendOutsets lineInsets:UIEdgeInsetsMake(LineWidth, LineWidth, LineWidth, LineWidth)];
-        [self p_setupUI];
-        [self p_setupGestureRecognizer];
     }
     return self;
+}
+
+- (void)layoutSubviews {
+    [super layoutSubviews];
+    if (!self.isViewLoaded) {
+        [self p_setupUI];
+        [self p_setupGestureRecognizer];
+        self.isViewLoaded = YES;
+    }
 }
 
 # pragma mark - UI setup
@@ -486,12 +493,12 @@ typedef NS_ENUM(NSInteger, LCorner) {
 
     UIView *verticalBar = [UIView new];
     verticalBar.translatesAutoresizingMaskIntoConstraints = NO;
-    verticalBar.backgroundColor = UIColor.redColor;
+    verticalBar.backgroundColor = self.edgeColor;
     [verticalBar ec_alignWidth:LCornerWidth height:LCornerLength];
 
     UIView *horizontalBar = [UIView new];
     horizontalBar.translatesAutoresizingMaskIntoConstraints = NO;
-    horizontalBar.backgroundColor = UIColor.redColor;
+    horizontalBar.backgroundColor = self.edgeColor;
     [horizontalBar ec_alignWidth:LCornerLength height:LCornerWidth];
 
     [view addSubview:verticalBar];
@@ -526,7 +533,7 @@ typedef NS_ENUM(NSInteger, LCorner) {
 
 - (UIColor *)edgeColor {
     if (!_edgeColor) {
-        _edgeColor = UIColor.redColor; // default color
+        _edgeColor = UIColor.greenColor; // default color
     }
     return _edgeColor;
 }
