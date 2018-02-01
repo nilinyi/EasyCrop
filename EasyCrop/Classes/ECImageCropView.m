@@ -10,6 +10,7 @@
 #import "ECImageCropBox.h"
 #import "ECImageCropView.h"
 #import "ECLayerAnimationMaker.h"
+#import "EasyCropDefines.h"
 #import "UIBezierPath+Utility.h"
 #import "UIImage+Utility.h"
 #import "UIImageView+Utility.h"

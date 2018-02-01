@@ -11,6 +11,7 @@
 #endif
 
 #import "EasyCrop.h"
+#import "EasyCropDefines.h"
 #import "ECCropBoxFrameConverter.h"
 #import "ECImageCropBox.h"
 #import "ECImageCropView.h"
