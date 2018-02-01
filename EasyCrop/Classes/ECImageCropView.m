@@ -53,6 +53,7 @@ const CGFloat MIN_IMAGE_SCALE = 0.7;
         actualBoxFrame = CGRectApplyAffineTransform(boxFrame, t);
     }
     self.cropBox = [[ECImageCropBox alloc] initWithFrame:actualBoxFrame inOCRImageCropView:self];
+    self.cropBox.edgeColor = self.cropBoxColor;
     [self addSubview:self.cropBox];
 
     // show highlighted layer

@@ -33,6 +33,7 @@
         return _cropImageView;
     }
     _cropImageView = [[ECImageCropView alloc] initWithImage:[UIImage imageNamed:@"test_image"]];
+    _cropImageView.cropBoxColor = UIColor.blueColor;
     return _cropImageView;
 }
 

@@ -14,6 +14,8 @@
 @property (nonatomic, readonly, strong) UIImage *croppedImage;
 /// A flag indicating whether ECImageCropView could receive any editing gestures.
 @property (nonatomic, readwrite, assign) BOOL cropLocked;
+/// Color for the crop box.
+@property (nonatomic, readwrite, strong) UIColor *cropBoxColor;
 
 - (instancetype)initWithImage:(UIImage *)image;
 
