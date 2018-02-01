@@ -6,36 +6,26 @@
 //  Copyright © 2017 ShaoXianDui. All rights reserved.
 //
 
-#import "ECImageCropBox.h"
 #import "ECGraphicsUtility.h"
-#import "ECLayerAnimationMaker.h"
-#import "UIImageView+Utility.h"
+#import "ECImageCropBox.h"
 #import "ECImageCropView.h"
+#import "ECLayerAnimationMaker.h"
 #import "UIBezierPath+Utility.h"
 #import "UIImage+Utility.h"
-#import <AVFoundation/AVFoundation.h>
+#import "UIImageView+Utility.h"
 #import "UIView+ECAutolayoutService.h"
-
-#ifdef DEBUG
-#   define DLog(fmt, ...) NSLog((@"%s [Line %d] " fmt), __PRETTY_FUNCTION__, __LINE__, ##__VA_ARGS__)
-#else
-#   define DLog(...)
-#endif
+#import <AVFoundation/AVFoundation.h>
 
 @interface ECImageCropView () <ECImageCropBoxDelegate, UIGestureRecognizerDelegate>
 
-# pragma mark - Public 
 @property (atomic, readwrite, assign) BOOL isGestureBusy;
 
-# pragma mark - Subviews
 @property (nonatomic, readwrite, strong) ECImageCropBox *cropBox;
 @property (nonatomic, readwrite, strong) UIImageView *imageView;
 
-# pragma mark - Shadow and highlight areas
 /// A layer representing all the background and highlighted area
 @property (nonatomic, readwrite, strong) CAShapeLayer *highlightedLayer;
 
-# pragma mark - Private accessors
 @property (nonatomic, readonly, assign) CGRect imagePresentingFrame;
 @property (nonatomic, readonly, assign) CGRect imageOriginalFrame;
 @property (nonatomic, readonly, assign) BOOL isCropBoxInsideImage;
@@ -57,13 +47,13 @@ const CGFloat MAX_IMAGE_SCALE = 5.0;
 const CGFloat MIN_IMAGE_SCALE = 0.7;
 
 # pragma mark - Public
-- (void)setupCropBox:(CGRect)boxFrame isOriginalFrame:(BOOL)isOriginalFrame {
+- (BOOL)setupCropBox:(CGRect)boxFrame basedOnImageCoordinate:(BOOL)isBasedOnImageCoordinate {
     if (self.cropBox) {
-        return; // no operation if crop box already exists
+        return NO; // no operation if crop box already exists
     }
 
     CGRect actualBoxFrame = boxFrame;
-    if (isOriginalFrame) {
+    if (isBasedOnImageCoordinate) {
         // calculate transform matrix which transforms from originalImageFrame to actualImageFrame
         CGAffineTransform t = [ECGraphicsUtility transformMatrixFromRect:self.imageOriginalFrame toRect:self.imagePresentingFrame];
         // transform originalboxFrame to actualBoxFrame
@@ -75,16 +65,18 @@ const CGFloat MIN_IMAGE_SCALE = 0.7;
     // show highlighted layer
     [self p_addHighlightedLayer];
     self.highlightedLayer.path = [self p_createPathWithHighlightedRect:self.cropBox.cropBoxFrameWithLineWidth].CGPath;
+    
+    return YES;
 }
 
-- (void)setupCropBox {
+- (BOOL)setupCropBox {
     CGRect validCropBoxRect = CGRectIntersection(self.preferredCropRect, self.imageView.imageFrameAfterAspectFitScaled);
-    [self setupCropBox:validCropBoxRect isOriginalFrame:NO];
+    return [self setupCropBox:validCropBoxRect basedOnImageCoordinate:NO];
 }
 
-- (void)removeCropBox {
+- (BOOL)removeCropBox {
     if (!self.cropBox) {
-        return;
+        return NO;
     }
 
     // reset all animations
@@ -101,6 +93,8 @@ const CGFloat MIN_IMAGE_SCALE = 0.7;
     // Transform Bug required.
     self.imageView.transform = CGAffineTransformIdentity;
     self.imageView.frame = _initialImageViewFrame;
+
+    return YES;
 }
 
 # pragma mark - Initializers
@@ -510,6 +504,10 @@ const CGFloat MIN_IMAGE_SCALE = 0.7;
 }
 
 - (UIImage *)croppedImage {
+    if (!self.cropBox) {
+        // Return default image if no crop box
+        return self.image;
+    }
     CGRect imageRect = self.imageView.imageFrameAfterAspectFitScaled;
     CGRect boxRect = self.cropBox.cropBoxFrame;
 
@@ -555,10 +553,8 @@ const CGFloat MIN_IMAGE_SCALE = 0.7;
 }
 
 - (void)setCropLocked:(BOOL)cropLocked {
-    @synchronized (self) {
-        _cropLocked = cropLocked;
-        self.userInteractionEnabled = !cropLocked;
-    }
+    _cropLocked = cropLocked;
+    self.userInteractionEnabled = !cropLocked;
 }
 
 - (BOOL)cropLocked {

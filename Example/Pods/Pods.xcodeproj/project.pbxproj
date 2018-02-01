@@ -59,8 +59,8 @@
 		4003419C049ECF2B9B57117E3A13BF38 /* Pods-EasyCrop_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-EasyCrop_Tests-frameworks.sh"; sourceTree = "<group>"; };
 		4071E3E4E326C49C9BB8229A74C51759 /* EasyCrop-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "EasyCrop-umbrella.h"; sourceTree = "<group>"; };
 		41C5A61F74669ED89DA15C14CE8FB4AC /* Pods-EasyCrop_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-EasyCrop_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		467490C6128F2D9F6CCC9678FE3D7DC7 /* EasyCrop.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = EasyCrop.framework; path = EasyCrop.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		47140E10AA82D8383ABAA224353756CD /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		467490C6128F2D9F6CCC9678FE3D7DC7 /* EasyCrop.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = EasyCrop.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		47140E10AA82D8383ABAA224353756CD /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		4743C8A2B4CB95AEE595008F76E1EE54 /* Pods-EasyCrop_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-EasyCrop_Example.release.xcconfig"; sourceTree = "<group>"; };
 		568849E95B9D7BA758AA8BA71EE8CED9 /* ECGraphicsUtility.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = ECGraphicsUtility.h; sourceTree = "<group>"; };
 		606DDF752F20214F643BA8215AF05E46 /* UIImageView+Utility.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+Utility.m"; sourceTree = "<group>"; };
@@ -74,15 +74,16 @@
 		7A5CDB8D3D41F9EAB05639483507AFA1 /* ECCropBoxFrameConverter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ECCropBoxFrameConverter.h; path = EasyCrop/Classes/ECCropBoxFrameConverter.h; sourceTree = "<group>"; };
 		7BC2C9A70BBC931D7EFD0B97FE6205BA /* ECLayerAnimationMaker.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = ECLayerAnimationMaker.m; sourceTree = "<group>"; };
 		7E34BEA14FA1315DEC221BAC21DFBEA2 /* EasyCrop.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EasyCrop.h; path = EasyCrop/Classes/EasyCrop.h; sourceTree = "<group>"; };
-		85EB8FA430B9477917C274322FE431D8 /* Pods_EasyCrop_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_EasyCrop_Example.framework; path = "Pods-EasyCrop_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		8663DE473EA03580A3EE575B1B6B6467 /* Pods_EasyCrop_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_EasyCrop_Tests.framework; path = "Pods-EasyCrop_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		85EB8FA430B9477917C274322FE431D8 /* Pods_EasyCrop_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EasyCrop_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8663DE473EA03580A3EE575B1B6B6467 /* Pods_EasyCrop_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EasyCrop_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8AD7B3E82022948100E93AA2 /* EasyCropDefines.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EasyCropDefines.h; sourceTree = "<group>"; };
 		906756E618580B6638ABD320F7209A89 /* UIBezierPath+Utility.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIBezierPath+Utility.h"; sourceTree = "<group>"; };
 		9143498131141B8655BDC218C494ACFA /* Pods-EasyCrop_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-EasyCrop_Tests-dummy.m"; sourceTree = "<group>"; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		97381597A6E123C6736E9EFEE96E0BAF /* Pods-EasyCrop_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-EasyCrop_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		9AAE5069BFEDF172409E2F44D7567C07 /* Pods-EasyCrop_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-EasyCrop_Tests-resources.sh"; sourceTree = "<group>"; };
 		9F5D151914886EB98F654740A8C7C3A4 /* EasyCrop-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "EasyCrop-dummy.m"; sourceTree = "<group>"; };
-		A6DE5CD173E136F44E7B2F1E26C2FA45 /* EasyCrop.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = EasyCrop.modulemap; sourceTree = "<group>"; };
+		A6DE5CD173E136F44E7B2F1E26C2FA45 /* EasyCrop.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = EasyCrop.modulemap; sourceTree = "<group>"; };
 		AADE34672FF4AB724121E001F899BCC2 /* UIImageView+Utility.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIImageView+Utility.h"; sourceTree = "<group>"; };
 		AB670E6B245A2F265A1E415600AF0963 /* UIBezierPath+Utility.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UIBezierPath+Utility.m"; sourceTree = "<group>"; };
 		AC482CC4C567221BA1F321D80835F55D /* Pods-EasyCrop_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-EasyCrop_Example-dummy.m"; sourceTree = "<group>"; };
@@ -90,15 +91,15 @@
 		AF59FBE69ABCE1E769AA1028A0945907 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B8DCEFF6827F4C7D2C2D248C8277FA07 /* EasyCrop.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = EasyCrop.xcconfig; sourceTree = "<group>"; };
 		BA22CF17F40AF317803458E05F825860 /* ECCropBoxFrameConverter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ECCropBoxFrameConverter.m; path = EasyCrop/Classes/ECCropBoxFrameConverter.m; sourceTree = "<group>"; };
-		CA69078D04C81A39B09053A9908D49EF /* Pods-EasyCrop_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-EasyCrop_Tests.modulemap"; sourceTree = "<group>"; };
+		CA69078D04C81A39B09053A9908D49EF /* Pods-EasyCrop_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-EasyCrop_Tests.modulemap"; sourceTree = "<group>"; };
 		CF53CD1AE91725138B1DB894441E75FC /* UIView+ECAutolayoutService.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIView+ECAutolayoutService.h"; sourceTree = "<group>"; };
 		D575734F7E379DD1288F32FE12799722 /* Pods-EasyCrop_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-EasyCrop_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		E2215FDE5913239A23F5FC656555BA97 /* UIImage+Utility.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Utility.m"; sourceTree = "<group>"; };
-		E2CF52FBB316C2C5FAA601959B347B9A /* Pods-EasyCrop_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-EasyCrop_Example.modulemap"; sourceTree = "<group>"; };
+		E2CF52FBB316C2C5FAA601959B347B9A /* Pods-EasyCrop_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-EasyCrop_Example.modulemap"; sourceTree = "<group>"; };
 		E3EB235EA01DEFFDF9B52D5F85440A4B /* ECImageCropBox.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ECImageCropBox.h; path = EasyCrop/Classes/ECImageCropBox.h; sourceTree = "<group>"; };
 		F1EF769A1A0DE483625CEC1BEB687894 /* UIView+ECAutolayoutService.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UIView+ECAutolayoutService.m"; sourceTree = "<group>"; };
-		F309E7C15E70AC306A975ACC8A515CEE /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
-		F69CE253F1F4F19E28E9588ACCF6D314 /* EasyCrop.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; path = EasyCrop.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		F309E7C15E70AC306A975ACC8A515CEE /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		F69CE253F1F4F19E28E9588ACCF6D314 /* EasyCrop.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; path = EasyCrop.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		F71D7F0253919D24C4FA98397FDAFFF8 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FD2FA38B98F25331D9CFA5B657291A7F /* ECImageCropView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ECImageCropView.m; path = EasyCrop/Classes/ECImageCropView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -135,6 +136,7 @@
 			isa = PBXGroup;
 			children = (
 				7E34BEA14FA1315DEC221BAC21DFBEA2 /* EasyCrop.h */,
+				8AD7B3E82022948100E93AA2 /* EasyCropDefines.h */,
 				7A5CDB8D3D41F9EAB05639483507AFA1 /* ECCropBoxFrameConverter.h */,
 				BA22CF17F40AF317803458E05F825860 /* ECCropBoxFrameConverter.m */,
 				E3EB235EA01DEFFDF9B52D5F85440A4B /* ECImageCropBox.h */,

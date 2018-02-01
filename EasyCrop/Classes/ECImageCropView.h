@@ -6,35 +6,33 @@
 //  Copyright © 2017 ShaoXianDui. All rights reserved.
 //
 
-
-/**
- An UIView for croping image.
- */
 @interface ECImageCropView : UIView
-@property (nonatomic, readwrite, strong) UIImage *image;
-@property (nonatomic, readonly, strong) UIImage *croppedImage;
-@property (atomic, readonly, assign) BOOL isGestureBusy;
 
+/// The image displayed in ECImageCropView. Default is nil.
+@property (nonatomic, readwrite, strong) UIImage *image;
+/// The cropped image based on the crop box.
+@property (nonatomic, readonly, strong) UIImage *croppedImage;
+/// A flag indicating whether ECImageCropView could receive any editing gestures.
 @property (atomic, readwrite, assign) BOOL cropLocked;
 
 - (instancetype)initWithImage:(UIImage *)image;
 
 /**
- Add a crop box.
-
- @param boxFrame The frame of the added crop box.
- @param isOriginalFrame If true, this method will treat boxFrame as to the real size of image.
+ Setup a crop box with the default proper frame.
  */
-- (void)setupCropBox:(CGRect)boxFrame isOriginalFrame:(BOOL)isOriginalFrame;
+- (BOOL)setupCropBox;
 
 /**
- Add a crop box with a preferred frame.
+ Setup the crop box. Return NO if setup failed, for example, a crop box is already in ECImageCropView. The boxFrame will be constrained inside image's bound if it's too large.
+
+ @param boxFrame The frame of the crop box to set.
+ @param isBasedOnImageCoordinate Pass in YES means boxFrame is based on the image's local coordinate system(image's bound). Otherwise, it will treat boxFrame under ECImageCropView's local coordinate system(this view's bound).
  */
-- (void)setupCropBox;
+- (BOOL)setupCropBox:(CGRect)boxFrame basedOnImageCoordinate:(BOOL)isBasedOnImageCoordinate;
 
 /**
- Remove the crop box from this view.
+ Remove the crop box.
  */
-- (void)removeCropBox;
+- (BOOL)removeCropBox;
 
 @end
