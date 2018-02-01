@@ -30,13 +30,15 @@ Implementing a UI for cropping image could be a headache in iOS. Well, you might
 
   s.ios.deployment_target = '9.0'
 
-  s.source_files = 'EasyCrop/Classes/**/*'
+  s.source_files = 'EasyCrop/Classes/**/*.{h,m}'
   
   # s.resource_bundles = {
   #   'EasyCrop' => ['EasyCrop/Assets/*.png']
   # }
 
-  s.public_header_files = 'Pod/Classes/EasyCrop.h'
+#  s.public_header_files = 'EasyCrop/Classes/Public/EasyCrop.h'
+#  s.private_header_files = 'EasyCrop/Classes/**/*.h'
+
   s.frameworks = 'UIKit'
   # s.dependency 'AFNetworking', '~> 2.3'
 end

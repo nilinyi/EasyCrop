@@ -8,6 +8,7 @@
 
 #import "ECViewController.h"
 #import <EasyCrop/EasyCrop.h>
+//@import EasyCrop;
 
 @interface ECViewController ()
 @property (nonatomic, readwrite, strong) ECImageCropView *cropImageView;

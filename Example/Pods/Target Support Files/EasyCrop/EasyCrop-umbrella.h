@@ -10,11 +10,11 @@
 #endif
 #endif
 
-#import "EasyCrop.h"
 #import "EasyCropDefines.h"
 #import "ECCropBoxFrameConverter.h"
 #import "ECImageCropBox.h"
 #import "ECImageCropView.h"
+#import "EasyCrop.h"
 #import "ECGraphicsUtility.h"
 #import "ECLayerAnimationMaker.h"
 #import "UIBezierPath+Utility.h"

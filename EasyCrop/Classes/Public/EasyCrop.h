@@ -11,3 +11,4 @@
 #import "ECImageCropView.h"
 
 #endif /* EasyCrop_h */
+
